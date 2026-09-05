@@ -296,12 +296,6 @@ def render_svg(
         f'font-family="{font_family_svg}">',
         f'<rect width="{svg_width}px" height="{final_height}px" fill="{colors["background"]}" rx="{SVG_CORNER_RADIUS}"/>'
     ]
-
-    if colors.get("ascii_bg"):
-        ascii_card_w = info_x - 30
-        ascii_card_h = final_height - 24
-        svg.append(f'<rect x="12" y="12" width="{ascii_card_w}" height="{ascii_card_h}" fill="{colors["ascii_bg"]}" rx="10"/>')
-
     svg.extend(body)
     svg.append("</svg>")
 

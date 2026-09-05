@@ -117,22 +117,21 @@ DARK = {
 # ─── Light Mode Colors (Hacker Light Terminal Theme) ──────────────────────────
 
 LIGHT = {
-    "background": "#FFFFFF",     # Pure white GitHub canvas
-    "primary": "#1F2328",        # Crisp primary dark text
-    "secondary": "#6E7781",      # Muted slate leaders
-    "rule": "#1B5E20",           # Bold forest green rules
-    "header": "#1B5E20",         # Deep forest green header
-    "prompt_user": "#0969DA",    # Cyber blue prompt user
+    "background": "#F5F5F4",     # Soft light neutral surface
+    "primary": "#393836",        # Slate dark text
+    "secondary": "#A8A29E",      # Subtle border/leaders
+    "rule": "#2D6A4F",           # Bold emerald rules
+    "header": "#2D6A4F",         # Deep forest green header
+    "prompt_user": "#2563EB",    # Royal blue prompt user
     "prompt_at": "#B45309",      # Amber at symbol
-    "prompt_host": "#1B5E20",    # Forest green host
-    "label": "#1B5E20",          # Deep forest green label
-    "value": "#1F2328",          # High contrast value text
+    "prompt_host": "#2D6A4F",    # Forest green host
+    "label": "#2D6A4F",          # Deep forest green label
+    "value": "#18181B",          # Dark value text
     "number": "#B45309",         # Amber stats numbers
-    "ascii": "#1F2328",          # Pure dark sketch ink for natural light mode portrait
-    "ascii_bg": None,            # Seamless light background
-    "positive": "#1A7F37",       # Green additions
-    "negative": "#CF222E",       # Crimson deletions
-    "link": "#0969DA",           # Accent link
+    "ascii": "#000000",          # Pure black ASCII portrait
+    "positive": "#2D6A4F",       # Green additions
+    "negative": "#DC2626",       # Crimson deletions
+    "link": "#2563EB",           # Accent link
 }
 
 # ─── GitHub API ───────────────────────────────────────────────────────────────

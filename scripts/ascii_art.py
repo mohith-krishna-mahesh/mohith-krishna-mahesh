@@ -14,22 +14,15 @@ from scripts.config import SOURCE_DIR
 
 
 COMPACT_ASCII_PATH = os.path.join(SOURCE_DIR, "compact_ascii.txt")
-COMPACT_ASCII_LIGHT_PATH = os.path.join(SOURCE_DIR, "compact_ascii_light.txt")
 USER_ASCII_PATH = os.path.join(SOURCE_DIR, "user_ascii.txt")
 
 
-def generate_ascii(path: str = None, mode: str = "dark") -> list[str]:
+def generate_ascii(path: str = COMPACT_ASCII_PATH) -> list[str]:
     """
     Load and return the compact 44x30 face ASCII art lines.
-    Supports mode='dark' and mode='light'.
+    Falls back to user_ascii.txt if compact_ascii.txt is missing.
     """
-    if path is None:
-        if mode == "light" and os.path.exists(COMPACT_ASCII_LIGHT_PATH):
-            target = COMPACT_ASCII_LIGHT_PATH
-        else:
-            target = COMPACT_ASCII_PATH if os.path.exists(COMPACT_ASCII_PATH) else USER_ASCII_PATH
-    else:
-        target = path
+    target = path if os.path.exists(path) else USER_ASCII_PATH
 
     if os.path.exists(target):
         with open(target, "r", encoding="utf-8") as f:

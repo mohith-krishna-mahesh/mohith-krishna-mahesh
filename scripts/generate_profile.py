@@ -121,13 +121,10 @@ def main():
     # Step 6: Render SVGs
     print("\n[6/6] Rendering SVGs...")
 
-    dark_ascii = generate_ascii(mode="dark")
-    light_ascii = generate_ascii(mode="light")
-
-    dark_svg = render_svg(dark_ascii, stats, projects, mode="dark")
+    dark_svg = render_svg(ascii_lines, stats, projects, mode="dark")
     save_svg(dark_svg, DARK_SVG)
 
-    light_svg = render_svg(light_ascii, stats, projects, mode="light")
+    light_svg = render_svg(ascii_lines, stats, projects, mode="light")
     save_svg(light_svg, LIGHT_SVG)
 
     # Validation

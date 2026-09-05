@@ -1,43 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1260 803" width="1260px" height="803px" font-family="ui-monospace, 'SF Mono', SFMono-Regular, Menlo, Consolas, 'Liberation Mono', 'JetBrains Mono', monospace">
-<rect width="1260px" height="803px" fill="#FFFFFF" rx="15"/>
+<rect width="1260px" height="803px" fill="#F5F5F4" rx="15"/>
 <style>
-  .label { fill: #1B5E20; }
-  .value { fill: #1F2328; }
+  .label { fill: #2D6A4F; }
+  .value { fill: #18181B; }
   .number { fill: #B45309; }
-  .primary { fill: #1F2328; }
-  .secondary { fill: #6E7781; }
-  .rule { fill: #1B5E20; font-weight: bold; }
-  .header { fill: #1B5E20; font-weight: bold; }
-  .prompt-user { fill: #0969DA; font-weight: bold; }
+  .primary { fill: #393836; }
+  .secondary { fill: #A8A29E; }
+  .rule { fill: #2D6A4F; font-weight: bold; }
+  .header { fill: #2D6A4F; font-weight: bold; }
+  .prompt-user { fill: #2563EB; font-weight: bold; }
   .prompt-at { fill: #B45309; font-weight: bold; }
-  .prompt-host { fill: #1B5E20; font-weight: bold; }
-  .ascii { fill: #1F2328; }
-  .positive { fill: #1A7F37; }
-  .negative { fill: #CF222E; }
-  .link { fill: #0969DA; }
+  .prompt-host { fill: #2D6A4F; font-weight: bold; }
+  .ascii { fill: #000000; }
+  .positive { fill: #2D6A4F; }
+  .negative { fill: #DC2626; }
+  .link { fill: #2563EB; }
   text, tspan { white-space: pre; }
   a { text-decoration: none; }
 </style>
 <text x="22" y="28" class="ascii" font-size="16.5px">
-<tspan x="22" y="28.0">               .::+*#%%%%%#*+::.</tspan>
-<tspan x="22" y="47.3">             .:+*#%%%%%%%%%%%%%#*+:.</tspan>
-<tspan x="22" y="66.6">          .:*#%%%%%%%%%%%%%%%%%%%%%#*:.</tspan>
-<tspan x="22" y="85.9">        .-*#%%%%%%%%%%%%%%%%%%%%%%%%%#*-.</tspan>
-<tspan x="22" y="105.2">       .+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%+.</tspan>
-<tspan x="22" y="124.5">      .*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*.</tspan>
-<tspan x="22" y="143.8">       *%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*</tspan>
-<tspan x="22" y="163.1">     .-*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*-.</tspan>
-<tspan x="22" y="182.4">     .=*%%%%%%%%%%%%%%%%%###%%%%%%%%%%%%*=.</tspan>
-<tspan x="22" y="201.7">       :=*#%%%%%%%%%%%%*+=--=+*%%%%%%%%*=:</tspan>
-<tspan x="22" y="221.0">          .-*#%%%%%%%#=..    ..=#%%%%%%*-.</tspan>
-<tspan x="22" y="240.3">          .-*#%%%%%%#=   @%:=@.  =#%%%%%*-.</tspan>
-<tspan x="22" y="259.6">          .=*%%%%%%#+.  .==-#+.   .+%%%%*=.</tspan>
-<tspan x="22" y="278.9">      *:-*+=#%%%%%#=  --==-##==-+#. .+%%*:.+ *#</tspan>
-<tspan x="22" y="298.2">      --#+=++**+++=-+*+.#%%+-**+=--=+***==:*=+.+</tspan>
-<tspan x="22" y="317.5">      +*#+:+**#######*-*%%%#***#######**++=*%#+*</tspan>
-<tspan x="22" y="336.8">       #%+*+*#*###*==###%%###%%=*#%####**+*==##+</tspan>
-<tspan x="22" y="356.1">        #+*++**+=-:==:..-:- .=++=-+=*#**+-=%+%#</tspan>
+<tspan x="22" y="28.0">               .... ::..     . ..</tspan>
+<tspan x="22" y="47.3">             ..:. ..          . :  ::...</tspan>
+<tspan x="22" y="66.6">          :::. ::. .           :   .   ....</tspan>
+<tspan x="22" y="85.9">       ..:.    ...  .     . -.    :   ......</tspan>
+<tspan x="22" y="105.2">      .... .......       .  :.. ..     .   .</tspan>
+<tspan x="22" y="124.5">     ... . ......        . .  . ..  .:.   .:.</tspan>
+<tspan x="22" y="143.8">      ::...... ..:   . ................. :.. .</tspan>
+<tspan x="22" y="163.1">    . . .  . ...-:.. .:....:-:........      .</tspan>
+<tspan x="22" y="182.4">    .      .::.:....::--::++=-:::...     ...:</tspan>
+<tspan x="22" y="201.7">      . . .:-:---.-:=****+=-:=++=:..  .    .</tspan>
+<tspan x="22" y="221.0">         .-=:.:. : ...=**+*-..    ...... ...</tspan>
+<tspan x="22" y="240.3">         .=::--==+=:::-+#**-:.@%:=@==:..=:..</tspan>
+<tspan x="22" y="259.6">         =+=+=.-. .::.=+%%+-:.==-#+=++%=+..</tspan>
+<tspan x="22" y="278.9">     *:-*+=+=--==  --==-##==-+#. .+..=+*:.+ *#</tspan>
+<tspan x="22" y="298.2">     --#+=++**+++=-+*+.#%%+-**+=--=+***==:*=+.+</tspan>
+<tspan x="22" y="317.5">     +*#+:+**#######*-*%%%#***#######**++=*%#+*</tspan>
+<tspan x="22" y="336.8">      #%+*+*#*###*==###%%###%%=*#%####**+*==##+</tspan>
+<tspan x="22" y="356.1">       #+*++**+=-:==:..-:- .=++=-+=*#**+-=%+%#</tspan>
 <tspan x="22" y="375.4">        #*===++=-+*+::......:=*+--+++++=:#**#</tspan>
 <tspan x="22" y="394.7">         -:===+:..:...:.+:::.::..:=+=--::###</tspan>
 <tspan x="22" y="414.0">           -=++=.- .#@+@*@+-%-. ..++=-=:</tspan>
@@ -57,7 +57,7 @@
 </text>
 <text x="515" y="28.0" font-size="17.0px"><tspan class="rule">───[ </tspan><tspan class="prompt-user">mohith</tspan><tspan class="prompt-at">@</tspan><tspan class="prompt-host">github</tspan><tspan class="rule"> ]────────────────────────────────</tspan></text>
 <text x="515" y="52.0" font-size="17.0px"><tspan class="label">· OS: </tspan><tspan class="secondary">...................... </tspan><tspan class="value">macOS, Kali Linux, Fedora, Windows 10</tspan></text>
-<text x="515" y="76.0" font-size="17.0px"><tspan class="label">· Uptime: </tspan><tspan class="secondary">.................. </tspan><tspan class="value">19 years, 6 months, 24 days</tspan></text>
+<text x="515" y="76.0" font-size="17.0px"><tspan class="label">· Uptime: </tspan><tspan class="secondary">.................. </tspan><tspan class="value">19 years, 6 months, 25 days</tspan></text>
 <text x="515" y="100.0" font-size="17.0px"><tspan class="label">· Host: </tspan><tspan class="secondary">.................... </tspan><tspan class="value">VIT Chennai</tspan></text>
 <text x="515" y="124.0" font-size="17.0px"><tspan class="label">· Kernel: </tspan><tspan class="secondary">.................. </tspan><tspan class="value">B.Tech Computer Science</tspan></text>
 <text x="515" y="148.0" font-size="17.0px"><tspan class="label">· IDE: </tspan><tspan class="secondary">..................... </tspan><tspan class="value">Zed, VSCode</tspan></text>

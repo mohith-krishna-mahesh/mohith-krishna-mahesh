@@ -2,7 +2,7 @@
 SVG renderer for the terminal-style GitHub profile dashboard.
 
 Generates self-contained SVG files for dark and light modes using the exact user-provided ASCII art.
-Layout: Complete 100% Face ASCII Portrait (left) | Matched Large Info Panel (right) | Dynamic Projects (bottom)
+Layout: 100% Face ASCII Portrait (left) | Big High-Legibility Terminal Dashboard (right) | Dynamic Projects (bottom)
 """
 
 import html
@@ -44,7 +44,7 @@ def render_svg(
     mode: str = "dark",
 ) -> str:
     """
-    Render a complete SVG profile dashboard with full-face preservation.
+    Render a complete SVG profile dashboard with big, bold, high-contrast typography.
     """
     colors = DARK if mode == "dark" else LIGHT
     uptime = calculate_uptime()
@@ -61,28 +61,30 @@ def render_svg(
     ascii_height = len(ascii_lines) * ascii_line_height
 
     # Info panel dimensions
-    info_x = int(ascii_x + ascii_width + 45)
+    info_x = int(ascii_x + ascii_width + 50)
     info_y = INFO_Y
     info_font_size = INFO_FONT_SIZE
     info_line_height = INFO_LINE_HEIGHT
     leader_fill = LEADER_FILL
     sep_width = SEPARATOR_WIDTH
 
-    svg_width = int(info_x + (sep_width + 2) * (info_font_size * 0.605) + 40)
+    val_color = "#FFFFFF" if mode == "dark" else colors["value"]
+
+    svg_width = int(info_x + (sep_width + 2) * (info_font_size * 0.605) + 60)
 
     body = []
 
     # Style block
     body.append("<style>")
-    body.append(f'  .label {{ fill: {colors["label"]}; font-size: {info_font_size}px; font-weight: 500; }}')
-    body.append(f'  .value {{ fill: {colors["value"]}; font-size: {info_font_size}px; }}')
+    body.append(f'  .label {{ fill: {colors["label"]}; font-size: {info_font_size}px; font-weight: 600; }}')
+    body.append(f'  .value {{ fill: {val_color}; font-size: {info_font_size}px; font-weight: 500; }}')
     body.append(f'  .primary {{ fill: {colors["primary"]}; font-size: {info_font_size}px; }}')
     body.append(f'  .secondary {{ fill: {colors["secondary"]}; font-size: {info_font_size}px; }}')
-    body.append(f'  .header {{ fill: {colors["header"]}; font-size: {info_font_size + 1}px; font-weight: bold; }}')
+    body.append(f'  .header {{ fill: {colors["header"]}; font-size: {info_font_size + 3}px; font-weight: bold; }}')
     body.append(f'  .ascii {{ fill: {colors["ascii"]}; font-size: {ascii_font_size}px; }}')
-    body.append(f'  .positive {{ fill: {colors["positive"]}; font-size: {info_font_size}px; }}')
+    body.append(f'  .positive {{ fill: {colors["positive"]}; font-size: {info_font_size}px; font-weight: 600; }}')
     body.append(f'  .negative {{ fill: {colors["negative"]}; font-size: {info_font_size}px; }}')
-    body.append(f'  .link {{ fill: {colors["link"]}; font-size: {info_font_size}px; }}')
+    body.append(f'  .link {{ fill: {colors["link"]}; font-size: {info_font_size}px; font-weight: 600; }}')
     body.append("  text, tspan { white-space: pre; }")
     body.append("  a { text-decoration: none; }")
     body.append("</style>")
@@ -91,9 +93,9 @@ def render_svg(
     if mode == "light":
         bg_dark = DARK["background"]
         body.append(
-            f'<rect x="{ascii_x - 12}" y="{ascii_y - 15}" '
-            f'width="{ascii_width + 24:.1f}" height="{ascii_height + 25:.1f}" '
-            f'fill="{bg_dark}" rx="10"/>'
+            f'<rect x="{ascii_x - 15}" y="{ascii_y - 18}" '
+            f'width="{ascii_width + 30:.1f}" height="{ascii_height + 30:.1f}" '
+            f'fill="{bg_dark}" rx="12"/>'
         )
 
     body.append(f'<text x="{ascii_x}" y="{ascii_y}" class="ascii">')
@@ -117,12 +119,12 @@ def render_svg(
         f'<tspan class="secondary">{_esc(header_sep)}</tspan>'
         f'</text>'
     )
-    curr_y += info_line_height + 6
+    curr_y += info_line_height + 10
 
     # Profile fields
     for field in PROFILE_FIELDS:
         if field is None:
-            curr_y += 8
+            curr_y += 12
             continue
 
         label, value = field
@@ -140,13 +142,13 @@ def render_svg(
         curr_y += info_line_height
 
     # ─── Contact Section ─────────────────────────────────────────────────────
-    curr_y += 12
+    curr_y += 18
     contact_sep = f"─ Contact {'─' * max(10, sep_width - 10)}"
     body.append(
         f'<text x="{info_x}" y="{curr_y:.1f}" class="secondary">'
         f'{_esc(contact_sep)}</text>'
     )
-    curr_y += info_line_height + 4
+    curr_y += info_line_height + 8
 
     for key, value in CONTACT.items():
         label_part, val_part = _build_info_line(key, value, leader_fill)
@@ -170,13 +172,13 @@ def render_svg(
         curr_y += info_line_height
 
     # ─── GitHub Stats Section ────────────────────────────────────────────────
-    curr_y += 12
+    curr_y += 18
     stats_sep = f"─ GitHub Stats {'─' * max(10, sep_width - 15)}"
     body.append(
         f'<text x="{info_x}" y="{curr_y:.1f}" class="secondary">'
         f'{_esc(stats_sep)}</text>'
     )
-    curr_y += info_line_height + 4
+    curr_y += info_line_height + 8
 
     repos = format_number(statistics.get("repos", 0))
     contrib = format_number(statistics.get("contributed_repos", 0))
@@ -240,16 +242,18 @@ def render_svg(
     curr_y += info_line_height
 
     # ─── Projects Section ────────────────────────────────────────────────────
-    proj_y = max(curr_y, ascii_y + ascii_height) + 30
+    proj_y = max(curr_y, ascii_y + ascii_height) + 40
     proj_x = ascii_x
-    proj_sep_len = int((svg_width - ascii_x * 2) / (info_font_size * 0.605))
+    proj_font_size = info_font_size - 2.0
+    proj_line_height = info_line_height
+    proj_sep_len = int((svg_width - ascii_x * 2) / (proj_font_size * 0.605))
 
     proj_sep = f"─ Projects {'─' * max(20, proj_sep_len - 11)}"
     body.append(
         f'<text x="{proj_x}" y="{proj_y:.1f}" class="secondary">'
         f'{_esc(proj_sep)}</text>'
     )
-    proj_y += info_line_height + 4
+    proj_y += proj_line_height + 8
 
     for proj in projects:
         name = proj["name"]
@@ -274,22 +278,22 @@ def render_svg(
             body.append(
                 f'<a xlink:href="{_esc(url)}" target="_blank">'
                 f'<text x="{proj_x}" y="{proj_y:.1f}">'
-                f'<tspan class="link">{_esc(name_part)}</tspan>'
-                f'<tspan class="secondary">{_esc(lang_part)}{_esc(star_part)} {_esc(leader)} </tspan>'
-                f'<tspan class="primary">{_esc(desc)}</tspan>'
+                f'<tspan class="link" style="font-size:{proj_font_size}px;">{_esc(name_part)}</tspan>'
+                f'<tspan class="secondary" style="font-size:{proj_font_size}px;">{_esc(lang_part)}{_esc(star_part)} {_esc(leader)} </tspan>'
+                f'<tspan class="primary" style="font-size:{proj_font_size}px;">{_esc(desc)}</tspan>'
                 f'</text></a>'
             )
         else:
             body.append(
                 f'<text x="{proj_x}" y="{proj_y:.1f}">'
-                f'<tspan class="value">{_esc(name_part)}</tspan>'
-                f'<tspan class="secondary">{_esc(lang_part)}{_esc(star_part)} {_esc(leader)} </tspan>'
-                f'<tspan class="primary">{_esc(desc)}</tspan>'
+                f'<tspan class="value" style="font-size:{proj_font_size}px;">{_esc(name_part)}</tspan>'
+                f'<tspan class="secondary" style="font-size:{proj_font_size}px;">{_esc(lang_part)}{_esc(star_part)} {_esc(leader)} </tspan>'
+                f'<tspan class="primary" style="font-size:{proj_font_size}px;">{_esc(desc)}</tspan>'
                 f'</text>'
             )
-        proj_y += info_line_height
+        proj_y += proj_line_height
 
-    final_height = int(proj_y + 25)
+    final_height = int(proj_y + 35)
 
     # Assemble complete SVG document
     lines = []
@@ -303,7 +307,7 @@ def render_svg(
     )
     lines.append(
         f'<rect width="{svg_width}px" height="{final_height}px" '
-        f'fill="{colors["background"]}" rx="15"/>'
+        f'fill="{colors["background"]}" rx="18"/>'
     )
     lines.extend(body)
     lines.append("</svg>")

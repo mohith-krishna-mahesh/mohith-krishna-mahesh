@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Virtual environment
+venv/
+.venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Source photo (keep private)
+assets/source/*.jpg
+assets/source/*.jpeg
+assets/source/*.png
+assets/source/*.heic
+assets/source/*.webp
+
+# Cache (regenerated)
+cache/*.json
+!cache/.gitkeep
+
+# Environment
+.env
+.env.local

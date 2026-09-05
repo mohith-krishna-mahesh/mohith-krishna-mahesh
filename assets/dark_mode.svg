@@ -2,15 +2,15 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1290 717" width="1290px" height="717px" font-family="'JetBrainsMono Nerd Font', 'JetBrains Mono', 'JetBrainsMono NF', monospace">
 <rect width="1290px" height="717px" fill="#0A0B0A" rx="15"/>
 <style>
-  .label { fill: #00FF66; font-weight: 500; }
-  .value { fill: #E2E8F0; }
-  .primary { fill: #E2E8F0; }
-  .secondary { fill: #285A3C; }
-  .header { fill: #00FF66; font-weight: bold; }
+  .label { fill: #A7ECB7; font-weight: 500; }
+  .value { fill: #E0E0E0; }
+  .primary { fill: #BBBBBB; }
+  .secondary { fill: #555555; }
+  .header { fill: #A7ECB7; font-weight: bold; }
   .ascii { fill: #FFFFFF; letter-spacing: 1.5px; }
-  .positive { fill: #00FF66; font-weight: 600; }
-  .negative { fill: #FF5555; font-weight: 600; }
-  .link { fill: #00E5FF; font-weight: 500; }
+  .positive { fill: #A7ECB7; font-weight: 600; }
+  .negative { fill: #e46876; font-weight: 600; }
+  .link { fill: #8ba4b0; font-weight: 500; }
   text, tspan { white-space: pre; }
   a { text-decoration: none; }
 </style>

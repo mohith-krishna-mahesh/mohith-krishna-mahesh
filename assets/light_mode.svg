@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1290 717" width="1290px" height="717px" font-family="'JetBrainsMono Nerd Font', 'JetBrains Mono', 'JetBrainsMono NF', monospace">
-<rect width="1290px" height="717px" fill="#F0FDF4" rx="15"/>
+<rect width="1290px" height="717px" fill="#F5F5F4" rx="15"/>
 <style>
-  .label { fill: #059669; font-weight: 500; }
-  .value { fill: #111827; }
-  .primary { fill: #1F2937; }
-  .secondary { fill: #6EE7B7; }
-  .header { fill: #047857; font-weight: bold; }
+  .label { fill: #2D6A4F; font-weight: 500; }
+  .value { fill: #1C1917; }
+  .primary { fill: #393836; }
+  .secondary { fill: #A8A29E; }
+  .header { fill: #2D6A4F; font-weight: bold; }
   .ascii { fill: #000000; letter-spacing: 1.5px; }
-  .positive { fill: #059669; font-weight: 600; }
+  .positive { fill: #2D6A4F; font-weight: 600; }
   .negative { fill: #DC2626; font-weight: 600; }
-  .link { fill: #0D9488; font-weight: 500; }
+  .link { fill: #2563EB; font-weight: 500; }
   text, tspan { white-space: pre; }
   a { text-decoration: none; }
 </style>

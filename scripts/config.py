@@ -97,31 +97,31 @@ SEPARATOR_WIDTH = 52
 # ─── Dark Mode Colors (VS Code Hacker Theme) ──────────────────────────────────
 
 DARK = {
-    "background": "#0A0B0A",      # Deep dark hacker background
-    "primary": "#E2E8F0",        # Crisp white text
-    "secondary": "#285A3C",      # Visible matrix green separators/leaders
-    "header": "#00FF66",         # Neon hacker green prompt and section headers
-    "label": "#00FF66",          # Vivid neon green labels
-    "value": "#E2E8F0",          # Crisp white values
+    "background": "#0A0B0A",      # Hacker.json background
+    "primary": "#BBBBBB",        # Hacker.json text
+    "secondary": "#555555",      # Hacker.json border / leader (clearly visible)
+    "header": "#A7ECB7",         # Hacker.json string / literal green
+    "label": "#A7ECB7",          # Hacker.json signature green for labels
+    "value": "#E0E0E0",          # Hacker.json punctuation/bright text
     "ascii": "#FFFFFF",          # Pure white ASCII portrait
-    "positive": "#00FF66",       # Neon green additions
-    "negative": "#FF5555",       # Cyber red deletions
-    "link": "#00E5FF",           # Cyber cyan links
+    "positive": "#A7ECB7",       # Hacker.json green additions
+    "negative": "#e46876",       # Hacker.json red deletions
+    "link": "#8ba4b0",           # Hacker.json link_text / border.focused
 }
 
 # ─── Light Mode Colors (Hacker Light Terminal Theme) ──────────────────────────
 
 LIGHT = {
-    "background": "#F0FDF4",     # Soft emerald tinted background
-    "primary": "#1F2937",        # Charcoal text
-    "secondary": "#6EE7B7",      # Visible mint green leaders/separators
-    "header": "#047857",         # Bold emerald header
-    "label": "#059669",          # Vibrant emerald labels
-    "value": "#111827",          # Deep charcoal values
+    "background": "#F5F5F4",     # Soft light neutral surface
+    "primary": "#393836",        # Slate dark text
+    "secondary": "#A8A29E",      # Subtle border/leaders
+    "header": "#2D6A4F",         # Deep forest green header
+    "label": "#2D6A4F",          # Deep forest green label
+    "value": "#1C1917",          # Dark value text
     "ascii": "#000000",          # Pure black ASCII portrait
-    "positive": "#059669",       # Emerald additions
+    "positive": "#2D6A4F",       # Green additions
     "negative": "#DC2626",       # Crimson deletions
-    "link": "#0D9488",           # Cyber teal links
+    "link": "#2563EB",           # Accent link
 }
 
 # ─── GitHub API ───────────────────────────────────────────────────────────────

@@ -95,14 +95,16 @@ def render_svg(
     header_name = "mohith"
     header_at = "@"
     header_host = "github"
-    header_sep = " " + "─" * max(10, sep_len - len("mohith@github") - 1)
+    left_rule = "───[ "
+    right_rule_prompt = " ]" + "─" * max(4, sep_len - (len(left_rule) + len(header_name + header_at + header_host) + 2))
 
     body.append(
         f'<text x="{info_x}" y="{curr_y:.1f}" font-size="{font_size}px">'
+        f'<tspan class="rule">{_esc(left_rule)}</tspan>'
         f'<tspan class="prompt-user">{_esc(header_name)}</tspan>'
         f'<tspan class="prompt-at">{_esc(header_at)}</tspan>'
         f'<tspan class="prompt-host">{_esc(header_host)}</tspan>'
-        f'<tspan class="rule">{_esc(header_sep)}</tspan>'
+        f'<tspan class="rule">{_esc(right_rule_prompt)}</tspan>'
         f'</text>'
     )
     curr_y += line_height
@@ -160,13 +162,14 @@ def render_svg(
             curr_y += line_height
 
     # ─── Contact Section ─────────────────────────────────────────────────────
-    curr_y += 8
-    contact_title = "- Contact "
-    contact_rule = "─" * max(10, sep_len - len(contact_title))
+    curr_y += 10
+    contact_title = "Contact"
+    right_rule_contact = " ]" + "─" * max(4, sep_len - (len(left_rule) + len(contact_title) + 2))
     body.append(
         f'<text x="{info_x}" y="{curr_y:.1f}" font-size="{font_size}px">'
+        f'<tspan class="rule">{_esc(left_rule)}</tspan>'
         f'<tspan class="header">{_esc(contact_title)}</tspan>'
-        f'<tspan class="rule">{_esc(contact_rule)}</tspan>'
+        f'<tspan class="rule">{_esc(right_rule_contact)}</tspan>'
         f'</text>'
     )
     curr_y += line_height
@@ -197,13 +200,14 @@ def render_svg(
         curr_y += line_height
 
     # ─── GitHub Stats Section ────────────────────────────────────────────────
-    curr_y += 8
-    stats_title = "- GitHub Stats "
-    stats_rule = "─" * max(10, sep_len - len(stats_title))
+    curr_y += 10
+    stats_title = "GitHub Stats"
+    right_rule_stats = " ]" + "─" * max(4, sep_len - (len(left_rule) + len(stats_title) + 2))
     body.append(
         f'<text x="{info_x}" y="{curr_y:.1f}" font-size="{font_size}px">'
+        f'<tspan class="rule">{_esc(left_rule)}</tspan>'
         f'<tspan class="header">{_esc(stats_title)}</tspan>'
-        f'<tspan class="rule">{_esc(stats_rule)}</tspan>'
+        f'<tspan class="rule">{_esc(right_rule_stats)}</tspan>'
         f'</text>'
     )
     curr_y += line_height

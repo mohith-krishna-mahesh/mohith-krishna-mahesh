@@ -68,19 +68,19 @@ CACHE_STATS = os.path.join(CACHE_DIR, "statistics.json")
 # ─── SVG Dimensions ──────────────────────────────────────────────────────────
 
 SVG_WIDTH = 1260
-SVG_HEIGHT = 745
+SVG_HEIGHT = 770
 SVG_CORNER_RADIUS = 15
 
 # ─── Font ─────────────────────────────────────────────────────────────────────
 
 FONT_FAMILY = 'ui-monospace, "SF Mono", SFMono-Regular, Menlo, Consolas, "Liberation Mono", "JetBrains Mono", monospace'
 INFO_FONT_SIZE = 17.0
-INFO_LINE_HEIGHT = 22.5
+INFO_LINE_HEIGHT = 24.0
 
 # ─── ASCII Art Configuration ─────────────────────────────────────────────────
 
 ASCII_FONT_SIZE = 16.5
-ASCII_LINE_HEIGHT = 18.2
+ASCII_LINE_HEIGHT = 19.3
 
 # ─── Layout ───────────────────────────────────────────────────────────────────
 

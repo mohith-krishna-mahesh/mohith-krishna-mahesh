@@ -73,7 +73,7 @@ SVG_CORNER_RADIUS = 15
 
 # ─── Font ─────────────────────────────────────────────────────────────────────
 
-FONT_FAMILY = '"JetBrainsMono Nerd Font", "JetBrains Mono", "JetBrainsMono NF", monospace'
+FONT_FAMILY = 'ui-monospace, "SF Mono", SFMono-Regular, Menlo, Consolas, "Liberation Mono", "JetBrains Mono", monospace'
 INFO_FONT_SIZE = 17.0
 INFO_LINE_HEIGHT = 22.5
 

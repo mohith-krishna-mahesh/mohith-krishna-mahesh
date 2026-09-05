@@ -69,7 +69,7 @@ def render_svg(
     body.append(f'  .prompt-user {{ fill: {colors["prompt_user"]}; font-weight: bold; }}')
     body.append(f'  .prompt-at {{ fill: {colors["prompt_at"]}; font-weight: bold; }}')
     body.append(f'  .prompt-host {{ fill: {colors["prompt_host"]}; font-weight: bold; }}')
-    body.append(f'  .ascii {{ fill: {colors["ascii"]}; letter-spacing: 1.5px; }}')
+    body.append(f'  .ascii {{ fill: {colors["ascii"]}; }}')
     body.append(f'  .positive {{ fill: {colors["positive"]}; font-weight: 600; }}')
     body.append(f'  .negative {{ fill: {colors["negative"]}; font-weight: 600; }}')
     body.append(f'  .link {{ fill: {colors["link"]}; font-weight: 600; }}')

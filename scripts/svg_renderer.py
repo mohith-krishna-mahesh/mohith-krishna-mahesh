@@ -163,6 +163,7 @@ def render_svg(
             curr_y += line_height
 
     # ─── Contact Section ─────────────────────────────────────────────────────
+    curr_y += 8
     contact_sep = f"- Contact {'─' * max(10, sep_len - 10)}"
     body.append(f'<text x="{info_x}" y="{curr_y:.1f}" font-size="{font_size}px" class="secondary">{_esc(contact_sep)}</text>')
     curr_y += line_height
@@ -192,6 +193,7 @@ def render_svg(
         curr_y += line_height
 
     # ─── GitHub Stats Section ────────────────────────────────────────────────
+    curr_y += 8
     stats_sep = f"- GitHub Stats {'─' * max(10, sep_len - 15)}"
     body.append(f'<text x="{info_x}" y="{curr_y:.1f}" font-size="{font_size}px" class="secondary">{_esc(stats_sep)}</text>')
     curr_y += line_height

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1045 703" width="1045px" height="703px" font-family="'JetBrainsMono Nerd Font', 'JetBrains Mono', 'JetBrainsMono NF', monospace">
-<rect width="1045px" height="703px" fill="#080C08" rx="15"/>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1095 1048" width="1095px" height="1048px" font-family="'JetBrainsMono Nerd Font', 'JetBrains Mono', 'JetBrainsMono NF', monospace">
+<rect width="1095px" height="1048px" fill="#080C08" rx="15"/>
 <style>
   .label { fill: #00FF66; font-weight: 500; }
   .value { fill: #79C0FF; }
@@ -15,63 +15,79 @@
   a { text-decoration: none; }
 </style>
 <text x="22" y="30" class="ascii" font-size="15.0px">
-<tspan x="22" y="30.0">              ?{(/|;!:::;!!,^^^`&#x27;</tspan>
-<tspan x="22" y="51.6">            {[\||!;,:,^,,,:^&#x27;&#x27;``.</tspan>
-<tspan x="22" y="73.2">         ?{|!|,``,^.`&#x27;.&#x27;..&#x27;. .&#x27;&#x27;</tspan>
-<tspan x="22" y="94.8">        \|;^^,&#x27;  .  .          .</tspan>
-<tspan x="22" y="116.4">       :``&#x27;.`^`.   .&#x27;      .</tspan>
-<tspan x="22" y="138.0">      !&#x27;.   .&#x27;&#x27;    ..      .</tspan>
-<tspan x="22" y="159.6">      ,&#x27;`&#x27;       . . .. ...          .</tspan>
-<tspan x="22" y="181.2">      &#x27;.``&#x27;.&#x27;&#x27;&#x27;`,::,;!:^^,,.      .  .</tspan>
-<tspan x="22" y="202.8">         `:,!\([}]]{)f?(!/|,&#x27;&#x27;.. .&#x27;.&#x27;</tspan>
-<tspan x="22" y="224.4">     ^&#x27; .,\/[ruzznxrvut[//|::;|/!;,``</tspan>
-<tspan x="22" y="246.0">   u!{/,!{}}rJ0m0UXzzut{|!,;{]ru)[!^^.&#x27;</tspan>
-<tspan x="22" y="267.6"> JQcrzt{tcuuJwdbpZLXcnt\\!:(jxJLf{!```&#x27;&#x27;.</tspan>
-<tspan x="22" y="289.2">UULumqvnUdCJpkbbhkqzzcf?}[[rYX00[:,&#x27;&#x27;:`,` ^</tspan>
-<tspan x="22" y="310.8">UUCuhkJZp#wZhhah#M*LQLcrxxcCQQpq},:,,/;|,.!</tspan>
-<tspan x="22" y="332.4">UJJYwZLaaobwbk**W88abqCXzUmw0wahc(|/\[{{,^|</tspan>
-<tspan x="22" y="354.0"> JJJUcYdppOQpdo*#MWWhLvnXJOLvUOQx(/\?}){^,;</tspan>
-<tspan x="22" y="375.6">  CJujnXXOvcqwpbbbkoZt/[Xcvj??}[;,!;?))/&#x27;&#x27;</tspan>
-<tspan x="22" y="397.2">    n)t}[CXnJJQmpdbhY(\?JXxt]{\` .^^[?{,</tspan>
-<tspan x="22" y="418.8">        :UkXrnXQqbakn}zzO0Ycvnf;`&#x27;.^(|</tspan>
-<tspan x="22" y="440.4">         c8ZnxxcCOqZucqwwwJXzzx{|,.,</tspan>
-<tspan x="22" y="462.0">          &amp;aZXfttrcnzCmqO0uf))[(\:`</tspan>
-<tspan x="22" y="483.6">           MoZvr]?}{xvnznr[|;!:||,</tspan>
-<tspan x="22" y="505.2">            #hmQvj)\{/:|;:``&#x27;&#x27;&#x27;`</tspan>
-<tspan x="22" y="526.8">             W*kZUcj}/:,^  &#x27;&#x27;``</tspan>
-<tspan x="22" y="548.4">             8#hdmZ0Cvrt[,&#x27;^,::</tspan>
-<tspan x="22" y="570.0">            aooahbddpmLzj/:!!!;</tspan>
-<tspan x="22" y="591.6">           fzOdkbbqOZmJv)/!|!:&#x27;</tspan>
-<tspan x="22" y="613.2">          ,;(fvXJLJXzXnt[/|!;^</tspan>
-<tspan x="22" y="634.8">        /\|;;!|(}ruvrf}[\//;,^</tspan>
-<tspan x="22" y="656.4">        |({/:`.`/?rut[{\///,,^.</tspan>
+<tspan x="22" y="30.0">               .... ::..     . ..</tspan>
+<tspan x="22" y="51.6">             ..:. ..          . :  ::...</tspan>
+<tspan x="22" y="73.2">          :::. ::. .           :   .   ....</tspan>
+<tspan x="22" y="94.8">       ..:.    ...  .     . -.    :   ......</tspan>
+<tspan x="22" y="116.4">      .... .......       .  :.. ..     .   .</tspan>
+<tspan x="22" y="138.0">     ... . ......        . .  . ..  .:.   .:.</tspan>
+<tspan x="22" y="159.6">      ::...... ..:   . ................. :.. .</tspan>
+<tspan x="22" y="181.2">    . . .  . ...-:.. .:....:-:........      .</tspan>
+<tspan x="22" y="202.8">    .      .::.:....::--::++=-:::...     ...:</tspan>
+<tspan x="22" y="224.4">      . . .:-:---.-:=****+=-:=++=:..  .    .</tspan>
+<tspan x="22" y="246.0">         .-=:.:. : ...=**+*-..    ...... ...</tspan>
+<tspan x="22" y="267.6">         .=::--==+=:::-+#**-:.@%:=@==:..=:..</tspan>
+<tspan x="22" y="289.2">         =+=+=.-. .::.=+%%+-:.==-#+=++%=+..</tspan>
+<tspan x="22" y="310.8">     *:-*+=+=--==  --==-##==-+#. .+..=+*:.+ *#</tspan>
+<tspan x="22" y="332.4">     --#+=++**+++=-+*+.#%%+-**+=--=+***==:*=+.+</tspan>
+<tspan x="22" y="354.0">     +*#+:+**#######*-*%%%#***#######**++=*%#+*</tspan>
+<tspan x="22" y="375.6">      #%+*+*#*###*==###%%###%%=*#%####**+*==##+</tspan>
+<tspan x="22" y="397.2">       #+*++**+=-:==:..-:- .=++=-+=*#**+-=%+%#</tspan>
+<tspan x="22" y="418.8">        #*===++=-+*+::......:=*+--+++++=:#**#</tspan>
+<tspan x="22" y="440.4">         -:===+:..:...:.+:::.::..:=+=--::###</tspan>
+<tspan x="22" y="462.0">           -=++=.- .#@+@*@+-%-. ..++=-=:</tspan>
+<tspan x="22" y="483.6">           :--++-**+***@@@@:#+**==*==-:.</tspan>
+<tspan x="22" y="505.2">            :-=++***+=+##*+=*#*#*+==-:.</tspan>
+<tspan x="22" y="526.8">             :--=+*+=--:=---+*#*+-=-:.</tspan>
+<tspan x="22" y="548.4">              .:-++##*+++*#*##++--:.:</tspan>
+<tspan x="22" y="570.0">              +-..--::++=*-+++-:...=+</tspan>
+<tspan x="22" y="591.6">              ++-. ..............-=++</tspan>
+<tspan x="22" y="613.2">              +++=-::         :-=+++=</tspan>
+<tspan x="22" y="634.8">              ++++==-:::..::--=++++*=</tspan>
+<tspan x="22" y="656.4">          :.=++++*+==--:::--=+++***++=:=</tspan>
+<tspan x="22" y="678.0">      =.*.+*++++*++++=----==+++++*+++++++-*+</tspan>
+<tspan x="22" y="699.6">  +=+==++=#**++++*+++======+=+*+++++++*##++=++++</tspan>
+<tspan x="22" y="721.2">=++++=++++*#*++++++++====-==+++*+++++**#==+=++++++</tspan>
+<tspan x="22" y="742.8">+++++-=+===##***+++++++=+++++++++++**##+=+=++++*++</tspan>
+<tspan x="22" y="764.4">+++++++++==+##***++++++++++++++++*#*##+==++++===**</tspan>
+<tspan x="22" y="786.0">+++++++==+=++#####*+***+++++**+*##%##++++++*++++++</tspan>
+<tspan x="22" y="807.6">=++=+=++++=++++*###################++++++++=+=+++=</tspan>
+<tspan x="22" y="829.2">=++++=+++=+++++++=+%%%%%%%%%%%%+=+++++++++++==++++</tspan>
+<tspan x="22" y="850.8">=+=*++++=+=+++=+====-=---===--==-*+=++++=++=++=+++</tspan>
+<tspan x="22" y="872.4">++++++=+=+=+++++++:======+===++=++++=+++++++++++++</tspan>
+<tspan x="22" y="894.0">+++++++=++++++==++++====+=+++++++++=+++++*++=+++++</tspan>
+<tspan x="22" y="915.6">++++=+=+++++=++=+=+++++==++=+===++-===++=++=+++*++</tspan>
+<tspan x="22" y="937.2">+++=+++++*++=+=+=+++=*+=+++++=+=++++==+=+++++*+=+*</tspan>
+<tspan x="22" y="958.8">++++==++=+++++=+=+++====+=+=++++==+++++++=+++=++++</tspan>
+<tspan x="22" y="980.4">++++*=+++=++=++==+=++=+==+++=+==++=+=++++===++++++</tspan>
+<tspan x="22" y="1002.0">+++=+++++-+*++==++====+=++=++=+=*=++++=+++==+===++</tspan>
 </text>
-<text x="445" y="30.0" font-size="15.0px"><tspan class="header">mohith</tspan><tspan class="primary">@</tspan><tspan class="header">github</tspan><tspan class="secondary"> ────────────────────────────────────────</tspan></text>
-<text x="445" y="51.6" font-size="15.0px"><tspan class="label">· OS: .................... </tspan><tspan class="value">macOS, Kali Linux, Fedora, Windows 10</tspan></text>
-<text x="445" y="73.2" font-size="15.0px"><tspan class="label">· Uptime: ................ </tspan><tspan class="value">19 years, 6 months, 24 days</tspan></text>
-<text x="445" y="94.8" font-size="15.0px"><tspan class="label">· Host: .................. </tspan><tspan class="value">VIT Chennai</tspan></text>
-<text x="445" y="116.4" font-size="15.0px"><tspan class="label">· Kernel: ................ </tspan><tspan class="value">B.Tech Computer Science</tspan></text>
-<text x="445" y="138.0" font-size="15.0px"><tspan class="label">· IDE: ................... </tspan><tspan class="value">Zed, VSCode</tspan></text>
-<text x="445" y="159.6" font-size="15.0px" class="secondary">·</text>
-<text x="445" y="181.2" font-size="15.0px"><tspan class="label">· Languages.Programming: .. </tspan><tspan class="value">Python, C, C++, Java, JS, TS, Bash</tspan></text>
-<text x="445" y="202.8" font-size="15.0px"><tspan class="label">· Languages.Computer: .... </tspan><tspan class="value">HTML, CSS, SQL, JSON, YAML, LaTeX</tspan></text>
-<text x="445" y="224.4" font-size="15.0px"><tspan class="label">· Languages.Real: ........ </tspan><tspan class="value">Malayalam, English, Tamil, Hindi</tspan></text>
-<text x="445" y="246.0" font-size="15.0px" class="secondary">·</text>
-<text x="445" y="267.6" font-size="15.0px"><tspan class="label">· Research.Area: ......... </tspan><tspan class="value">Cryptography</tspan></text>
-<text x="445" y="289.2" font-size="15.0px"><tspan class="label">· Research.Project: ...... </tspan><tspan class="value">MOSAIC</tspan></text>
-<text x="445" y="310.8" font-size="15.0px" class="secondary">·</text>
-<text x="445" y="332.4" font-size="15.0px"><tspan class="label">· Interests.Software: .... </tspan><tspan class="value">Cybersecurity, Systems, Full-Stack,</tspan></text>
-<text x="445" y="354.0" font-size="15.0px"><tspan class="secondary">·                          </tspan><tspan class="value">AI/ML, Blockchain, Game Development</tspan></text>
-<text x="445" y="375.6" font-size="15.0px"><tspan class="label">· Interests.Hardware: .... </tspan><tspan class="value">Communication Systems, Rover Dev</tspan></text>
-<text x="445" y="397.2" font-size="15.0px"><tspan class="label">· Interests.Events: ...... </tspan><tspan class="value">CTFs, Hackathons, Game Jams, Robotics</tspan></text>
-<text x="445" y="418.8" font-size="15.0px"><tspan class="label">· Interests.Science: ..... </tspan><tspan class="value">Mathematics, Physics, Chemistry, Biology</tspan></text>
-<text x="445" y="440.4" font-size="15.0px"><tspan class="label">· Interests.Humanities: .. </tspan><tspan class="value">Philosophy, History, Art</tspan></text>
-<text x="445" y="462.0" font-size="15.0px" class="secondary">- Contact ────────────────────────────────────────────</text>
-<a xlink:href="https://github.com/mohith-krishna-mahesh" target="_blank"><text x="445" y="483.6" font-size="15.0px"><tspan class="label">· GitHub: ................ </tspan><tspan class="link">github.com/mohith-krishna-mahesh</tspan></text></a>
-<a xlink:href="https://www.linkedin.com/in/mohith-krishna-mahesh/" target="_blank"><text x="445" y="505.2" font-size="15.0px"><tspan class="label">· LinkedIn: .............. </tspan><tspan class="link">linkedin.com/in/mohith-krishna-mahesh</tspan></text></a>
-<a xlink:href="mailto:mohith4533@gmail.com" target="_blank"><text x="445" y="526.8" font-size="15.0px"><tspan class="label">· Email: ................. </tspan><tspan class="link">mohith4533@gmail.com</tspan></text></a>
-<text x="445" y="548.4" font-size="15.0px" class="secondary">- GitHub Stats ───────────────────────────────────────</text>
-<text x="445" y="570.0" font-size="15.0px"><tspan class="label">· Repos: ................. </tspan><tspan class="value">9</tspan><tspan class="secondary"> {Contributed: </tspan><tspan class="value">0</tspan><tspan class="secondary">} | </tspan><tspan class="label">Stars: ............. </tspan><tspan class="value">0</tspan></text>
-<text x="445" y="591.6" font-size="15.0px"><tspan class="label">· Commits: ............... </tspan><tspan class="value">26</tspan><tspan class="secondary">              | </tspan><tspan class="label">Followers: ......... </tspan><tspan class="value">5</tspan></text>
-<text x="445" y="613.2" font-size="15.0px"><tspan class="label">· Lines of Code on GitHub: .. </tspan><tspan class="value">38,190 </tspan><tspan class="secondary">(</tspan><tspan class="positive"> 43,765++</tspan><tspan class="secondary">, </tspan><tspan class="negative"> 5,575-- </tspan><tspan class="secondary">)</tspan></text>
+<text x="495" y="30.0" font-size="15.0px"><tspan class="header">mohith</tspan><tspan class="primary">@</tspan><tspan class="header">github</tspan><tspan class="secondary"> ────────────────────────────────────────</tspan></text>
+<text x="495" y="51.6" font-size="15.0px"><tspan class="label">· OS: .................... </tspan><tspan class="value">macOS, Kali Linux, Fedora, Windows 10</tspan></text>
+<text x="495" y="73.2" font-size="15.0px"><tspan class="label">· Uptime: ................ </tspan><tspan class="value">19 years, 6 months, 24 days</tspan></text>
+<text x="495" y="94.8" font-size="15.0px"><tspan class="label">· Host: .................. </tspan><tspan class="value">VIT Chennai</tspan></text>
+<text x="495" y="116.4" font-size="15.0px"><tspan class="label">· Kernel: ................ </tspan><tspan class="value">B.Tech Computer Science</tspan></text>
+<text x="495" y="138.0" font-size="15.0px"><tspan class="label">· IDE: ................... </tspan><tspan class="value">Zed, VSCode</tspan></text>
+<text x="495" y="159.6" font-size="15.0px" class="secondary">·</text>
+<text x="495" y="181.2" font-size="15.0px"><tspan class="label">· Languages.Programming: .. </tspan><tspan class="value">Python, C, C++, Java, JS, TS, Bash</tspan></text>
+<text x="495" y="202.8" font-size="15.0px"><tspan class="label">· Languages.Computer: .... </tspan><tspan class="value">HTML, CSS, SQL, JSON, YAML, LaTeX</tspan></text>
+<text x="495" y="224.4" font-size="15.0px"><tspan class="label">· Languages.Real: ........ </tspan><tspan class="value">Malayalam, English, Tamil, Hindi</tspan></text>
+<text x="495" y="246.0" font-size="15.0px" class="secondary">·</text>
+<text x="495" y="267.6" font-size="15.0px"><tspan class="label">· Research.Area: ......... </tspan><tspan class="value">Cryptography</tspan></text>
+<text x="495" y="289.2" font-size="15.0px"><tspan class="label">· Research.Project: ...... </tspan><tspan class="value">MOSAIC</tspan></text>
+<text x="495" y="310.8" font-size="15.0px" class="secondary">·</text>
+<text x="495" y="332.4" font-size="15.0px"><tspan class="label">· Interests.Software: .... </tspan><tspan class="value">Cybersecurity, Systems, Full-Stack,</tspan></text>
+<text x="495" y="354.0" font-size="15.0px"><tspan class="secondary">·                          </tspan><tspan class="value">AI/ML, Blockchain, Game Development</tspan></text>
+<text x="495" y="375.6" font-size="15.0px"><tspan class="label">· Interests.Hardware: .... </tspan><tspan class="value">Communication Systems, Rover Dev</tspan></text>
+<text x="495" y="397.2" font-size="15.0px"><tspan class="label">· Interests.Events: ...... </tspan><tspan class="value">CTFs, Hackathons, Game Jams, Robotics</tspan></text>
+<text x="495" y="418.8" font-size="15.0px"><tspan class="label">· Interests.Science: ..... </tspan><tspan class="value">Mathematics, Physics, Chemistry, Biology</tspan></text>
+<text x="495" y="440.4" font-size="15.0px"><tspan class="label">· Interests.Humanities: .. </tspan><tspan class="value">Philosophy, History, Art</tspan></text>
+<text x="495" y="462.0" font-size="15.0px" class="secondary">- Contact ────────────────────────────────────────────</text>
+<a xlink:href="https://github.com/mohith-krishna-mahesh" target="_blank"><text x="495" y="483.6" font-size="15.0px"><tspan class="label">· GitHub: ................ </tspan><tspan class="link">github.com/mohith-krishna-mahesh</tspan></text></a>
+<a xlink:href="https://www.linkedin.com/in/mohith-krishna-mahesh/" target="_blank"><text x="495" y="505.2" font-size="15.0px"><tspan class="label">· LinkedIn: .............. </tspan><tspan class="link">linkedin.com/in/mohith-krishna-mahesh</tspan></text></a>
+<a xlink:href="mailto:mohith4533@gmail.com" target="_blank"><text x="495" y="526.8" font-size="15.0px"><tspan class="label">· Email: ................. </tspan><tspan class="link">mohith4533@gmail.com</tspan></text></a>
+<text x="495" y="548.4" font-size="15.0px" class="secondary">- GitHub Stats ───────────────────────────────────────</text>
+<text x="495" y="570.0" font-size="15.0px"><tspan class="label">· Repos: ................. </tspan><tspan class="value">9</tspan><tspan class="secondary"> {Contributed: </tspan><tspan class="value">0</tspan><tspan class="secondary">} | </tspan><tspan class="label">Stars: ............. </tspan><tspan class="value">0</tspan></text>
+<text x="495" y="591.6" font-size="15.0px"><tspan class="label">· Commits: ............... </tspan><tspan class="value">26</tspan><tspan class="secondary">              | </tspan><tspan class="label">Followers: ......... </tspan><tspan class="value">5</tspan></text>
+<text x="495" y="613.2" font-size="15.0px"><tspan class="label">· Lines of Code on GitHub: .. </tspan><tspan class="value">38,190 </tspan><tspan class="secondary">(</tspan><tspan class="positive"> 43,765++</tspan><tspan class="secondary">, </tspan><tspan class="negative"> 5,575-- </tspan><tspan class="secondary">)</tspan></text>
 </svg>

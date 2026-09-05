@@ -73,11 +73,15 @@ def render_svg(
     body.append("</style>")
 
     # ─── ASCII Portrait ─────────────────────────────────────────────────────
+    ascii_max_len = max((len(l) for l in ascii_lines), default=50)
+    ascii_width = ascii_max_len * (ascii_font_size * 0.605)
+    ascii_height = len(ascii_lines) * ascii_line_height
+
     if mode == "light":
         bg_dark = DARK["background"]
         body.append(
             f'<rect x="{ascii_x - 10}" y="{ascii_y - 18}" '
-            f'width="415" height="660" '
+            f'width="{ascii_width + 20:.1f}" height="{ascii_height + 25:.1f}" '
             f'fill="{bg_dark}" rx="12"/>'
         )
 

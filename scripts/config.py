@@ -67,8 +67,8 @@ CACHE_STATS = os.path.join(CACHE_DIR, "statistics.json")
 
 # ─── SVG Dimensions ──────────────────────────────────────────────────────────
 
-SVG_WIDTH = 1045
-SVG_HEIGHT = 703
+SVG_WIDTH = 1095
+SVG_HEIGHT = 1050
 SVG_CORNER_RADIUS = 15
 
 # ─── Font ─────────────────────────────────────────────────────────────────────
@@ -87,7 +87,7 @@ ASCII_LINE_HEIGHT = 21.6
 ASCII_X = 22
 ASCII_Y = 30
 
-INFO_X = 445
+INFO_X = 495
 INFO_Y = 30
 
 # Info panel formatting

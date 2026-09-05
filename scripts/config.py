@@ -97,31 +97,31 @@ SEPARATOR_WIDTH = 52
 # ─── Dark Mode Colors (VS Code Hacker Theme) ──────────────────────────────────
 
 DARK = {
-    "background": "#080C08",      # Deep terminal black
-    "primary": "#E2E8F0",        # Crisp white/light gray
-    "secondary": "#284E3A",      # Matrix green separators/leaders
-    "header": "#00FF66",         # Neon prompt
-    "label": "#00FF66",          # Neon green labels
-    "value": "#79C0FF",          # Electric ice blue values
-    "ascii": "#FFFFFF",          # Crisp white portrait (Dark mode)
-    "positive": "#00FF66",       # Additions
-    "negative": "#FF5555",       # Deletions
-    "link": "#00E5FF",           # Cyber cyan links
+    "background": "#0A0B0A",      # Zed Hacker deep background
+    "primary": "#BBBBBB",        # text from Hacker.json
+    "secondary": "#393836",      # border / subtle leader color
+    "header": "#8ba4b0",         # border.focused cool slate accent
+    "label": "#8992a7",          # text.accent slate blue-grey
+    "value": "#E0E0E0",          # Crisp light text
+    "ascii": "#FFFFFF",          # Pure white ASCII portrait
+    "positive": "#8ea4a2",       # icon.muted / border.transparent sage
+    "negative": "#c57474",       # Muted red deletions
+    "link": "#8ba4b0",           # Focused accent links
 }
 
 # ─── Light Mode Colors (Hacker Light Terminal Theme) ──────────────────────────
 
 LIGHT = {
-    "background": "#F0FDF4",     # Matrix light green tint
-    "primary": "#1F2937",        # Charcoal
-    "secondary": "#6EE7B7",      # Emerald leaders
-    "header": "#064E3B",         # Deep dark green prompt
-    "label": "#047857",          # Deep emerald labels
-    "value": "#0284C7",          # Deep cyan/blue values
-    "ascii": "#000000",          # Crisp black portrait (Light mode)
-    "positive": "#059669",       # Additions
-    "negative": "#DC2626",       # Deletions
-    "link": "#0D9488",           # Cyber teal links
+    "background": "#F5F5F4",     # Soft light neutral surface
+    "primary": "#393836",        # Slate dark text
+    "secondary": "#D6D3D1",      # Subtle border/leaders
+    "header": "#334155",         # Deep slate prompt
+    "label": "#475569",          # Slate label
+    "value": "#18181B",          # Dark value text
+    "ascii": "#000000",          # Pure black ASCII portrait
+    "positive": "#0D9488",       # Teal additions
+    "negative": "#DC2626",       # Crimson deletions
+    "link": "#2563EB",           # Accent link
 }
 
 # ─── GitHub API ───────────────────────────────────────────────────────────────

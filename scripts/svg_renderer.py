@@ -133,19 +133,19 @@ def render_svg(
 
         prefix = f"· {label}: "
         dots_count = max(2, leader_fill - len(prefix))
-        dots = "." * dots_count
-        label_part = f"{prefix}{dots} "
+        dots = "." * dots_count + " "
 
         body.append(
             f'<text x="{info_x}" y="{curr_y:.1f}" font-size="{font_size}px">'
-            f'<tspan class="label">{_esc(label_part)}</tspan>'
+            f'<tspan class="label">{_esc(prefix)}</tspan>'
+            f'<tspan class="secondary">{_esc(dots)}</tspan>'
             f'<tspan class="value">{_esc(val)}</tspan>'
             f'</text>'
         )
         curr_y += line_height
 
         for wrap_val in wraps:
-            wrap_indent = " " * len(label_part)
+            wrap_indent = " " * len(prefix + dots)
             body.append(
                 f'<text x="{info_x}" y="{curr_y:.1f}" font-size="{font_size}px">'
                 f'<tspan class="secondary">·{wrap_indent[1:]}</tspan>'
@@ -164,21 +164,22 @@ def render_svg(
         url = CONTACT_URLS.get(key, "")
         prefix = f"· {key}: "
         dots_count = max(2, leader_fill - len(prefix))
-        dots = "." * dots_count
-        label_part = f"{prefix}{dots} "
+        dots = "." * dots_count + " "
 
         if url:
             body.append(
                 f'<a xlink:href="{_esc(url)}" target="_blank">'
                 f'<text x="{info_x}" y="{curr_y:.1f}" font-size="{font_size}px">'
-                f'<tspan class="label">{_esc(label_part)}</tspan>'
+                f'<tspan class="label">{_esc(prefix)}</tspan>'
+                f'<tspan class="secondary">{_esc(dots)}</tspan>'
                 f'<tspan class="link">{_esc(val)}</tspan>'
                 f'</text></a>'
             )
         else:
             body.append(
                 f'<text x="{info_x}" y="{curr_y:.1f}" font-size="{font_size}px">'
-                f'<tspan class="label">{_esc(label_part)}</tspan>'
+                f'<tspan class="label">{_esc(prefix)}</tspan>'
+                f'<tspan class="secondary">{_esc(dots)}</tspan>'
                 f'<tspan class="value">{_esc(val)}</tspan>'
                 f'</text>'
             )
@@ -201,17 +202,19 @@ def render_svg(
 
     # Line 1: Repos
     repo_prefix = "· Repos: "
-    repo_dots = "." * max(2, leader_fill - len(repo_prefix))
+    repo_dots = "." * max(2, leader_fill - len(repo_prefix)) + " "
     star_prefix = "Stars: "
-    star_dots = "." * 13
+    star_dots = "." * 13 + " "
     body.append(
         f'<text x="{info_x}" y="{curr_y:.1f}" font-size="{font_size}px">'
-        f'<tspan class="label">{_esc(repo_prefix + repo_dots)} </tspan>'
+        f'<tspan class="label">{_esc(repo_prefix)}</tspan>'
+        f'<tspan class="secondary">{_esc(repo_dots)}</tspan>'
         f'<tspan class="value">{_esc(repos)}</tspan>'
         f'<tspan class="secondary"> {{Contributed: </tspan>'
         f'<tspan class="value">{_esc(contrib)}</tspan>'
         f'<tspan class="secondary">}} | </tspan>'
-        f'<tspan class="label">{_esc(star_prefix + star_dots)} </tspan>'
+        f'<tspan class="label">{_esc(star_prefix)}</tspan>'
+        f'<tspan class="secondary">{_esc(star_dots)}</tspan>'
         f'<tspan class="value">{_esc(stars)}</tspan>'
         f'</text>'
     )
@@ -219,18 +222,20 @@ def render_svg(
 
     # Line 2: Commits
     commit_prefix = "· Commits: "
-    commit_dots = "." * max(2, leader_fill - len(commit_prefix))
+    commit_dots = "." * max(2, leader_fill - len(commit_prefix)) + " "
     commits_str = str(commits)
     padding_needed = max(1, 16 - len(commits_str))
     commits_pad = " " * padding_needed
     follower_prefix = "Followers: "
-    follower_dots = "." * 9
+    follower_dots = "." * 9 + " "
     body.append(
         f'<text x="{info_x}" y="{curr_y:.1f}" font-size="{font_size}px">'
-        f'<tspan class="label">{_esc(commit_prefix + commit_dots)} </tspan>'
+        f'<tspan class="label">{_esc(commit_prefix)}</tspan>'
+        f'<tspan class="secondary">{_esc(commit_dots)}</tspan>'
         f'<tspan class="value">{_esc(commits_str)}</tspan>'
         f'<tspan class="secondary">{_esc(commits_pad)}| </tspan>'
-        f'<tspan class="label">{_esc(follower_prefix + follower_dots)} </tspan>'
+        f'<tspan class="label">{_esc(follower_prefix)}</tspan>'
+        f'<tspan class="secondary">{_esc(follower_dots)}</tspan>'
         f'<tspan class="value">{_esc(followers)}</tspan>'
         f'</text>'
     )
@@ -238,10 +243,11 @@ def render_svg(
 
     # Line 3: LOC
     loc_prefix = "· Lines of Code on GitHub: "
-    loc_dots = ".."
+    loc_dots = ".. "
     body.append(
         f'<text x="{info_x}" y="{curr_y:.1f}" font-size="{font_size}px">'
-        f'<tspan class="label">{_esc(loc_prefix + loc_dots)} </tspan>'
+        f'<tspan class="label">{_esc(loc_prefix)}</tspan>'
+        f'<tspan class="secondary">{_esc(loc_dots)}</tspan>'
         f'<tspan class="value">{_esc(total_loc)} </tspan>'
         f'<tspan class="secondary">(</tspan>'
         f'<tspan class="positive"> {_esc(additions)}++</tspan>'

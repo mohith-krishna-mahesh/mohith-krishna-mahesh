@@ -117,9 +117,9 @@ DARK = {
 # ─── Light Mode Colors (Hacker Light Terminal Theme) ──────────────────────────
 
 LIGHT = {
-    "background": "#F6F8FA",     # Clean GitHub surface
+    "background": "#FFFFFF",     # Pure white GitHub canvas
     "primary": "#1F2328",        # Crisp primary dark text
-    "secondary": "#656D76",      # Muted slate leaders
+    "secondary": "#6E7781",      # Muted slate leaders
     "rule": "#1B5E20",           # Bold forest green rules
     "header": "#1B5E20",         # Deep forest green header
     "prompt_user": "#0969DA",    # Cyber blue prompt user
@@ -128,8 +128,8 @@ LIGHT = {
     "label": "#1B5E20",          # Deep forest green label
     "value": "#1F2328",          # High contrast value text
     "number": "#B45309",         # Amber stats numbers
-    "ascii": "#FFFFFF",          # Crisp white portrait inside dark terminal card
-    "ascii_bg": "#0A0B0A",       # Dedicated dark terminal card for flawless portrait rendering
+    "ascii": "#1F2328",          # Pure dark sketch ink for natural light mode portrait
+    "ascii_bg": None,            # Seamless light background
     "positive": "#1A7F37",       # Green additions
     "negative": "#CF222E",       # Crimson deletions
     "link": "#0969DA",           # Accent link

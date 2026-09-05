@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1190 677" width="1190px" height="677px" font-family="'JetBrainsMono Nerd Font', 'JetBrains Mono', 'JetBrainsMono NF', monospace">
-<rect width="1190px" height="677px" fill="#F0FDF4" rx="15"/>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1290 717" width="1290px" height="717px" font-family="'JetBrainsMono Nerd Font', 'JetBrains Mono', 'JetBrainsMono NF', monospace">
+<rect width="1290px" height="717px" fill="#F0FDF4" rx="15"/>
 <style>
   .label { fill: #047857; font-weight: 500; }
   .value { fill: #0284C7; }
   .primary { fill: #1F2937; }
   .secondary { fill: #6EE7B7; }
   .header { fill: #064E3B; font-weight: bold; }
-  .ascii { fill: #000000; }
+  .ascii { fill: #000000; letter-spacing: 1.5px; }
   .positive { fill: #059669; font-weight: 600; }
   .negative { fill: #DC2626; font-weight: 600; }
   .link { fill: #0D9488; font-weight: 500; }
@@ -50,32 +50,32 @@
 <tspan x="22" y="610.4">=++++=++++*#*++++++++====-==+++*+++++**#==+=++++++</tspan>
 <tspan x="22" y="628.6">+++++-=+===##***+++++++=+++++++++++**##+=+=++++*++</tspan>
 </text>
-<text x="540" y="28.0" font-size="16.5px"><tspan class="header">mohith</tspan><tspan class="primary">@</tspan><tspan class="header">github</tspan><tspan class="secondary"> ────────────────────────────────────────</tspan></text>
-<text x="540" y="50.1" font-size="16.5px"><tspan class="label">· OS: .................... </tspan><tspan class="value">macOS, Kali Linux, Fedora, Windows 10</tspan></text>
-<text x="540" y="72.2" font-size="16.5px"><tspan class="label">· Uptime: ................ </tspan><tspan class="value">19 years, 6 months, 24 days</tspan></text>
-<text x="540" y="94.3" font-size="16.5px"><tspan class="label">· Host: .................. </tspan><tspan class="value">VIT Chennai</tspan></text>
-<text x="540" y="116.4" font-size="16.5px"><tspan class="label">· Kernel: ................ </tspan><tspan class="value">B.Tech Computer Science</tspan></text>
-<text x="540" y="138.5" font-size="16.5px"><tspan class="label">· IDE: ................... </tspan><tspan class="value">Zed, VSCode</tspan></text>
-<text x="540" y="160.6" font-size="16.5px" class="secondary">·</text>
-<text x="540" y="182.7" font-size="16.5px"><tspan class="label">· Languages.Programming: .. </tspan><tspan class="value">Python, C, C++, Java, JS, TS, Bash</tspan></text>
-<text x="540" y="204.8" font-size="16.5px"><tspan class="label">· Languages.Computer: .... </tspan><tspan class="value">HTML, CSS, SQL, JSON, YAML, LaTeX</tspan></text>
-<text x="540" y="226.9" font-size="16.5px"><tspan class="label">· Languages.Real: ........ </tspan><tspan class="value">Malayalam, English, Tamil, Hindi</tspan></text>
-<text x="540" y="249.0" font-size="16.5px" class="secondary">·</text>
-<text x="540" y="271.1" font-size="16.5px"><tspan class="label">· Research.Area: ......... </tspan><tspan class="value">Cryptography</tspan></text>
-<text x="540" y="293.2" font-size="16.5px"><tspan class="label">· Research.Project: ...... </tspan><tspan class="value">MOSAIC</tspan></text>
-<text x="540" y="315.3" font-size="16.5px" class="secondary">·</text>
-<text x="540" y="337.4" font-size="16.5px"><tspan class="label">· Interests.Software: .... </tspan><tspan class="value">Cybersecurity, Systems, Full-Stack,</tspan></text>
-<text x="540" y="359.5" font-size="16.5px"><tspan class="secondary">·                          </tspan><tspan class="value">AI/ML, Blockchain, Game Development</tspan></text>
-<text x="540" y="381.6" font-size="16.5px"><tspan class="label">· Interests.Hardware: .... </tspan><tspan class="value">Communication Systems, Rover Dev</tspan></text>
-<text x="540" y="403.7" font-size="16.5px"><tspan class="label">· Interests.Events: ...... </tspan><tspan class="value">CTFs, Hackathons, Game Jams, Robotics</tspan></text>
-<text x="540" y="425.8" font-size="16.5px"><tspan class="label">· Interests.Science: ..... </tspan><tspan class="value">Mathematics, Physics, Chemistry, Biology</tspan></text>
-<text x="540" y="447.9" font-size="16.5px"><tspan class="label">· Interests.Humanities: .. </tspan><tspan class="value">Philosophy, History, Art</tspan></text>
-<text x="540" y="478.0" font-size="16.5px" class="secondary">- Contact ────────────────────────────────────────────</text>
-<a xlink:href="https://github.com/mohith-krishna-mahesh" target="_blank"><text x="540" y="500.1" font-size="16.5px"><tspan class="label">· GitHub: ................ </tspan><tspan class="link">github.com/mohith-krishna-mahesh</tspan></text></a>
-<a xlink:href="https://www.linkedin.com/in/mohith-krishna-mahesh/" target="_blank"><text x="540" y="522.2" font-size="16.5px"><tspan class="label">· LinkedIn: .............. </tspan><tspan class="link">linkedin.com/in/mohith-krishna-mahesh</tspan></text></a>
-<a xlink:href="mailto:mohith4533@gmail.com" target="_blank"><text x="540" y="544.3" font-size="16.5px"><tspan class="label">· Email: ................. </tspan><tspan class="link">mohith4533@gmail.com</tspan></text></a>
-<text x="540" y="574.4" font-size="16.5px" class="secondary">- GitHub Stats ───────────────────────────────────────</text>
-<text x="540" y="596.5" font-size="16.5px"><tspan class="label">· Repos: ................. </tspan><tspan class="value">9</tspan><tspan class="secondary"> {Contributed: </tspan><tspan class="value">0</tspan><tspan class="secondary">} | </tspan><tspan class="label">Stars: ............. </tspan><tspan class="value">0</tspan></text>
-<text x="540" y="618.6" font-size="16.5px"><tspan class="label">· Commits: ............... </tspan><tspan class="value">26</tspan><tspan class="secondary">              | </tspan><tspan class="label">Followers: ......... </tspan><tspan class="value">5</tspan></text>
-<text x="540" y="640.7" font-size="16.5px"><tspan class="label">· Lines of Code on GitHub: .. </tspan><tspan class="value">38,190 </tspan><tspan class="secondary">(</tspan><tspan class="positive"> 43,765++</tspan><tspan class="secondary">, </tspan><tspan class="negative"> 5,575-- </tspan><tspan class="secondary">)</tspan></text>
+<text x="595" y="28.0" font-size="17.5px"><tspan class="header">mohith</tspan><tspan class="primary">@</tspan><tspan class="header">github</tspan><tspan class="secondary"> ──────────────────────────────────────</tspan></text>
+<text x="595" y="51.5" font-size="17.5px"><tspan class="label">· OS: .................... </tspan><tspan class="value">macOS, Kali Linux, Fedora, Windows 10</tspan></text>
+<text x="595" y="75.0" font-size="17.5px"><tspan class="label">· Uptime: ................ </tspan><tspan class="value">19 years, 6 months, 24 days</tspan></text>
+<text x="595" y="98.5" font-size="17.5px"><tspan class="label">· Host: .................. </tspan><tspan class="value">VIT Chennai</tspan></text>
+<text x="595" y="122.0" font-size="17.5px"><tspan class="label">· Kernel: ................ </tspan><tspan class="value">B.Tech Computer Science</tspan></text>
+<text x="595" y="145.5" font-size="17.5px"><tspan class="label">· IDE: ................... </tspan><tspan class="value">Zed, VSCode</tspan></text>
+<text x="595" y="169.0" font-size="17.5px" class="secondary">·</text>
+<text x="595" y="192.5" font-size="17.5px"><tspan class="label">· Languages.Programming: .. </tspan><tspan class="value">Python, C, C++, Java, JS, TS, Bash</tspan></text>
+<text x="595" y="216.0" font-size="17.5px"><tspan class="label">· Languages.Computer: .... </tspan><tspan class="value">HTML, CSS, SQL, JSON, YAML, LaTeX</tspan></text>
+<text x="595" y="239.5" font-size="17.5px"><tspan class="label">· Languages.Real: ........ </tspan><tspan class="value">Malayalam, English, Tamil, Hindi</tspan></text>
+<text x="595" y="263.0" font-size="17.5px" class="secondary">·</text>
+<text x="595" y="286.5" font-size="17.5px"><tspan class="label">· Research.Area: ......... </tspan><tspan class="value">Cryptography</tspan></text>
+<text x="595" y="310.0" font-size="17.5px"><tspan class="label">· Research.Project: ...... </tspan><tspan class="value">MOSAIC</tspan></text>
+<text x="595" y="333.5" font-size="17.5px" class="secondary">·</text>
+<text x="595" y="357.0" font-size="17.5px"><tspan class="label">· Interests.Software: .... </tspan><tspan class="value">Cybersecurity, Systems, Full-Stack,</tspan></text>
+<text x="595" y="380.5" font-size="17.5px"><tspan class="secondary">·                          </tspan><tspan class="value">AI/ML, Blockchain, Game Development</tspan></text>
+<text x="595" y="404.0" font-size="17.5px"><tspan class="label">· Interests.Hardware: .... </tspan><tspan class="value">Communication Systems, Rover Dev</tspan></text>
+<text x="595" y="427.5" font-size="17.5px"><tspan class="label">· Interests.Events: ...... </tspan><tspan class="value">CTFs, Hackathons, Game Jams, Robotics</tspan></text>
+<text x="595" y="451.0" font-size="17.5px"><tspan class="label">· Interests.Science: ..... </tspan><tspan class="value">Mathematics, Physics, Chemistry, Biology</tspan></text>
+<text x="595" y="474.5" font-size="17.5px"><tspan class="label">· Interests.Humanities: .. </tspan><tspan class="value">Philosophy, History, Art</tspan></text>
+<text x="595" y="506.0" font-size="17.5px" class="secondary">- Contact ──────────────────────────────────────────</text>
+<a xlink:href="https://github.com/mohith-krishna-mahesh" target="_blank"><text x="595" y="529.5" font-size="17.5px"><tspan class="label">· GitHub: ................ </tspan><tspan class="link">github.com/mohith-krishna-mahesh</tspan></text></a>
+<a xlink:href="https://www.linkedin.com/in/mohith-krishna-mahesh/" target="_blank"><text x="595" y="553.0" font-size="17.5px"><tspan class="label">· LinkedIn: .............. </tspan><tspan class="link">linkedin.com/in/mohith-krishna-mahesh</tspan></text></a>
+<a xlink:href="mailto:mohith4533@gmail.com" target="_blank"><text x="595" y="576.5" font-size="17.5px"><tspan class="label">· Email: ................. </tspan><tspan class="link">mohith4533@gmail.com</tspan></text></a>
+<text x="595" y="608.0" font-size="17.5px" class="secondary">- GitHub Stats ─────────────────────────────────────</text>
+<text x="595" y="631.5" font-size="17.5px"><tspan class="label">· Repos: ................. </tspan><tspan class="value">9</tspan><tspan class="secondary"> {Contributed: </tspan><tspan class="value">0</tspan><tspan class="secondary">} | </tspan><tspan class="label">Stars: ............. </tspan><tspan class="value">0</tspan></text>
+<text x="595" y="655.0" font-size="17.5px"><tspan class="label">· Commits: ............... </tspan><tspan class="value">26</tspan><tspan class="secondary">              | </tspan><tspan class="label">Followers: ......... </tspan><tspan class="value">5</tspan></text>
+<text x="595" y="678.5" font-size="17.5px"><tspan class="label">· Lines of Code on GitHub: .. </tspan><tspan class="value">38,190 </tspan><tspan class="secondary">(</tspan><tspan class="positive"> 43,765++</tspan><tspan class="secondary">, </tspan><tspan class="negative"> 5,575-- </tspan><tspan class="secondary">)</tspan></text>
 </svg>

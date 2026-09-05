@@ -67,15 +67,15 @@ CACHE_STATS = os.path.join(CACHE_DIR, "statistics.json")
 
 # ─── SVG Dimensions ──────────────────────────────────────────────────────────
 
-SVG_WIDTH = 1190
-SVG_HEIGHT = 675
+SVG_WIDTH = 1290
+SVG_HEIGHT = 715
 SVG_CORNER_RADIUS = 15
 
 # ─── Font ─────────────────────────────────────────────────────────────────────
 
 FONT_FAMILY = '"JetBrainsMono Nerd Font", "JetBrains Mono", "JetBrainsMono NF", monospace'
-INFO_FONT_SIZE = 16.5
-INFO_LINE_HEIGHT = 22.1
+INFO_FONT_SIZE = 17.5
+INFO_LINE_HEIGHT = 23.5
 
 # ─── ASCII Art Configuration ─────────────────────────────────────────────────
 
@@ -87,12 +87,12 @@ ASCII_LINE_HEIGHT = 18.2
 ASCII_X = 22
 ASCII_Y = 28
 
-INFO_X = 540
+INFO_X = 595
 INFO_Y = 28
 
 # Info panel formatting
 LEADER_FILL = 26     # total width including label and leaders
-SEPARATOR_WIDTH = 54
+SEPARATOR_WIDTH = 52
 
 # ─── Dark Mode Colors (VS Code Hacker Theme) ──────────────────────────────────
 

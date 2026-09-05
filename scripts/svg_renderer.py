@@ -64,7 +64,7 @@ def render_svg(
     body.append(f'  .primary {{ fill: {colors["primary"]}; }}')
     body.append(f'  .secondary {{ fill: {colors["secondary"]}; }}')
     body.append(f'  .header {{ fill: {colors["header"]}; font-weight: bold; }}')
-    body.append(f'  .ascii {{ fill: {colors["ascii"]}; }}')
+    body.append(f'  .ascii {{ fill: {colors["ascii"]}; letter-spacing: 1.5px; }}')
     body.append(f'  .positive {{ fill: {colors["positive"]}; font-weight: 600; }}')
     body.append(f'  .negative {{ fill: {colors["negative"]}; font-weight: 600; }}')
     body.append(f'  .link {{ fill: {colors["link"]}; font-weight: 500; }}')

@@ -97,16 +97,21 @@ SEPARATOR_WIDTH = 52
 # ─── Dark Mode Colors (VS Code Hacker Theme) ──────────────────────────────────
 
 DARK = {
-    "background": "#0A0B0A",      # Hacker.json background
-    "primary": "#BBBBBB",        # Hacker.json text
-    "secondary": "#555555",      # Hacker.json border / leader (clearly visible)
-    "header": "#A7ECB7",         # Hacker.json string / literal green
-    "label": "#A7ECB7",          # Hacker.json signature green for labels
-    "value": "#E0E0E0",          # Hacker.json punctuation/bright text
+    "background": "#0A0B0A",      # Deep dark background from Hacker.json
+    "primary": "#BBBBBB",        # Base text from Hacker.json
+    "secondary": "#4E6554",      # Matrix green-charcoal dotted leaders
+    "rule": "#81B38C",           # Solid prominent hacker green header rules
+    "header": "#81B38C",         # Bold hacker green section headers
+    "prompt_user": "#7fb4ca",    # Electric cyber blue prompt user
+    "prompt_at": "#e6c384",      # Golden amber at symbol
+    "prompt_host": "#81B38C",    # Hacker green host
+    "label": "#81B38C",          # Rich prominent hacker green labels
+    "value": "#F8FAFC",          # Crisp bright white values
+    "number": "#e6c384",         # Golden stats numbers from Hacker.json
     "ascii": "#FFFFFF",          # Pure white ASCII portrait
-    "positive": "#A7ECB7",       # Hacker.json green additions
-    "negative": "#e46876",       # Hacker.json red deletions
-    "link": "#8ba4b0",           # Hacker.json link_text / border.focused
+    "positive": "#81B38C",       # Hacker green additions
+    "negative": "#ff5d62",       # Vibrant coral red deletions
+    "link": "#7fb4ca",           # Electric cyber blue links
 }
 
 # ─── Light Mode Colors (Hacker Light Terminal Theme) ──────────────────────────
@@ -115,9 +120,14 @@ LIGHT = {
     "background": "#F5F5F4",     # Soft light neutral surface
     "primary": "#393836",        # Slate dark text
     "secondary": "#A8A29E",      # Subtle border/leaders
+    "rule": "#2D6A4F",           # Bold emerald rules
     "header": "#2D6A4F",         # Deep forest green header
+    "prompt_user": "#2563EB",    # Royal blue prompt user
+    "prompt_at": "#B45309",      # Amber at symbol
+    "prompt_host": "#2D6A4F",    # Forest green host
     "label": "#2D6A4F",          # Deep forest green label
-    "value": "#1C1917",          # Dark value text
+    "value": "#18181B",          # Dark value text
+    "number": "#B45309",         # Amber stats numbers
     "ascii": "#000000",          # Pure black ASCII portrait
     "positive": "#2D6A4F",       # Green additions
     "negative": "#DC2626",       # Crimson deletions

@@ -59,15 +59,20 @@ def render_svg(
 
     # CSS Styles
     body.append("<style>")
-    body.append(f'  .label {{ fill: {colors["label"]}; font-weight: 500; }}')
+    body.append(f'  .label {{ fill: {colors["label"]}; font-weight: 600; }}')
     body.append(f'  .value {{ fill: {colors["value"]}; }}')
+    body.append(f'  .number {{ fill: {colors["number"]}; font-weight: 600; }}')
     body.append(f'  .primary {{ fill: {colors["primary"]}; }}')
     body.append(f'  .secondary {{ fill: {colors["secondary"]}; }}')
+    body.append(f'  .rule {{ fill: {colors["rule"]}; font-weight: bold; }}')
     body.append(f'  .header {{ fill: {colors["header"]}; font-weight: bold; }}')
+    body.append(f'  .prompt-user {{ fill: {colors["prompt_user"]}; font-weight: bold; }}')
+    body.append(f'  .prompt-at {{ fill: {colors["prompt_at"]}; font-weight: bold; }}')
+    body.append(f'  .prompt-host {{ fill: {colors["prompt_host"]}; font-weight: bold; }}')
     body.append(f'  .ascii {{ fill: {colors["ascii"]}; letter-spacing: 1.5px; }}')
     body.append(f'  .positive {{ fill: {colors["positive"]}; font-weight: 600; }}')
     body.append(f'  .negative {{ fill: {colors["negative"]}; font-weight: 600; }}')
-    body.append(f'  .link {{ fill: {colors["link"]}; font-weight: 500; }}')
+    body.append(f'  .link {{ fill: {colors["link"]}; font-weight: 600; }}')
     body.append("  text, tspan { white-space: pre; }")
     body.append("  a { text-decoration: none; }")
     body.append("</style>")
@@ -94,10 +99,10 @@ def render_svg(
 
     body.append(
         f'<text x="{info_x}" y="{curr_y:.1f}" font-size="{font_size}px">'
-        f'<tspan class="header">{_esc(header_name)}</tspan>'
-        f'<tspan class="primary">{_esc(header_at)}</tspan>'
-        f'<tspan class="header">{_esc(header_host)}</tspan>'
-        f'<tspan class="secondary">{_esc(header_sep)}</tspan>'
+        f'<tspan class="prompt-user">{_esc(header_name)}</tspan>'
+        f'<tspan class="prompt-at">{_esc(header_at)}</tspan>'
+        f'<tspan class="prompt-host">{_esc(header_host)}</tspan>'
+        f'<tspan class="rule">{_esc(header_sep)}</tspan>'
         f'</text>'
     )
     curr_y += line_height
@@ -161,7 +166,7 @@ def render_svg(
     body.append(
         f'<text x="{info_x}" y="{curr_y:.1f}" font-size="{font_size}px">'
         f'<tspan class="header">{_esc(contact_title)}</tspan>'
-        f'<tspan class="secondary">{_esc(contact_rule)}</tspan>'
+        f'<tspan class="rule">{_esc(contact_rule)}</tspan>'
         f'</text>'
     )
     curr_y += line_height
@@ -198,7 +203,7 @@ def render_svg(
     body.append(
         f'<text x="{info_x}" y="{curr_y:.1f}" font-size="{font_size}px">'
         f'<tspan class="header">{_esc(stats_title)}</tspan>'
-        f'<tspan class="secondary">{_esc(stats_rule)}</tspan>'
+        f'<tspan class="rule">{_esc(stats_rule)}</tspan>'
         f'</text>'
     )
     curr_y += line_height
@@ -221,13 +226,13 @@ def render_svg(
         f'<text x="{info_x}" y="{curr_y:.1f}" font-size="{font_size}px">'
         f'<tspan class="label">{_esc(repo_prefix)}</tspan>'
         f'<tspan class="secondary">{_esc(repo_dots)}</tspan>'
-        f'<tspan class="value">{_esc(repos)}</tspan>'
+        f'<tspan class="number">{_esc(repos)}</tspan>'
         f'<tspan class="secondary"> {{Contributed: </tspan>'
-        f'<tspan class="value">{_esc(contrib)}</tspan>'
+        f'<tspan class="number">{_esc(contrib)}</tspan>'
         f'<tspan class="secondary">}} | </tspan>'
         f'<tspan class="label">{_esc(star_prefix)}</tspan>'
         f'<tspan class="secondary">{_esc(star_dots)}</tspan>'
-        f'<tspan class="value">{_esc(stars)}</tspan>'
+        f'<tspan class="number">{_esc(stars)}</tspan>'
         f'</text>'
     )
     curr_y += line_height
@@ -244,11 +249,11 @@ def render_svg(
         f'<text x="{info_x}" y="{curr_y:.1f}" font-size="{font_size}px">'
         f'<tspan class="label">{_esc(commit_prefix)}</tspan>'
         f'<tspan class="secondary">{_esc(commit_dots)}</tspan>'
-        f'<tspan class="value">{_esc(commits_str)}</tspan>'
+        f'<tspan class="number">{_esc(commits_str)}</tspan>'
         f'<tspan class="secondary">{_esc(commits_pad)}| </tspan>'
         f'<tspan class="label">{_esc(follower_prefix)}</tspan>'
         f'<tspan class="secondary">{_esc(follower_dots)}</tspan>'
-        f'<tspan class="value">{_esc(followers)}</tspan>'
+        f'<tspan class="number">{_esc(followers)}</tspan>'
         f'</text>'
     )
     curr_y += line_height
@@ -260,7 +265,7 @@ def render_svg(
         f'<text x="{info_x}" y="{curr_y:.1f}" font-size="{font_size}px">'
         f'<tspan class="label">{_esc(loc_prefix)}</tspan>'
         f'<tspan class="secondary">{_esc(loc_dots)}</tspan>'
-        f'<tspan class="value">{_esc(total_loc)} </tspan>'
+        f'<tspan class="number">{_esc(total_loc)} </tspan>'
         f'<tspan class="secondary">(</tspan>'
         f'<tspan class="positive"> {_esc(additions)}++</tspan>'
         f'<tspan class="secondary">, </tspan>'

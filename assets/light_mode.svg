@@ -2,15 +2,20 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1290 717" width="1290px" height="717px" font-family="'JetBrainsMono Nerd Font', 'JetBrains Mono', 'JetBrainsMono NF', monospace">
 <rect width="1290px" height="717px" fill="#F5F5F4" rx="15"/>
 <style>
-  .label { fill: #2D6A4F; font-weight: 500; }
-  .value { fill: #1C1917; }
+  .label { fill: #2D6A4F; font-weight: 600; }
+  .value { fill: #18181B; }
+  .number { fill: #B45309; font-weight: 600; }
   .primary { fill: #393836; }
   .secondary { fill: #A8A29E; }
+  .rule { fill: #2D6A4F; font-weight: bold; }
   .header { fill: #2D6A4F; font-weight: bold; }
+  .prompt-user { fill: #2563EB; font-weight: bold; }
+  .prompt-at { fill: #B45309; font-weight: bold; }
+  .prompt-host { fill: #2D6A4F; font-weight: bold; }
   .ascii { fill: #000000; letter-spacing: 1.5px; }
   .positive { fill: #2D6A4F; font-weight: 600; }
   .negative { fill: #DC2626; font-weight: 600; }
-  .link { fill: #2563EB; font-weight: 500; }
+  .link { fill: #2563EB; font-weight: 600; }
   text, tspan { white-space: pre; }
   a { text-decoration: none; }
 </style>
@@ -50,7 +55,7 @@
 <tspan x="22" y="610.4">=++++=++++*#*++++++++====-==+++*+++++**#==+=++++++</tspan>
 <tspan x="22" y="628.6">+++++-=+===##***+++++++=+++++++++++**##+=+=++++*++</tspan>
 </text>
-<text x="595" y="28.0" font-size="17.5px"><tspan class="header">mohith</tspan><tspan class="primary">@</tspan><tspan class="header">github</tspan><tspan class="secondary"> ──────────────────────────────────────</tspan></text>
+<text x="595" y="28.0" font-size="17.5px"><tspan class="prompt-user">mohith</tspan><tspan class="prompt-at">@</tspan><tspan class="prompt-host">github</tspan><tspan class="rule"> ──────────────────────────────────────</tspan></text>
 <text x="595" y="51.5" font-size="17.5px"><tspan class="label">· OS: </tspan><tspan class="secondary">.................... </tspan><tspan class="value">macOS, Kali Linux, Fedora, Windows 10</tspan></text>
 <text x="595" y="75.0" font-size="17.5px"><tspan class="label">· Uptime: </tspan><tspan class="secondary">................ </tspan><tspan class="value">19 years, 6 months, 24 days</tspan></text>
 <text x="595" y="98.5" font-size="17.5px"><tspan class="label">· Host: </tspan><tspan class="secondary">.................. </tspan><tspan class="value">VIT Chennai</tspan></text>
@@ -70,12 +75,12 @@
 <text x="595" y="427.5" font-size="17.5px"><tspan class="label">· Interests.Events: </tspan><tspan class="secondary">...... </tspan><tspan class="value">CTFs, Hackathons, Game Jams, Robotics</tspan></text>
 <text x="595" y="451.0" font-size="17.5px"><tspan class="label">· Interests.Science: </tspan><tspan class="secondary">..... </tspan><tspan class="value">Mathematics, Physics, Chemistry, Biology</tspan></text>
 <text x="595" y="474.5" font-size="17.5px"><tspan class="label">· Interests.Humanities: </tspan><tspan class="secondary">.. </tspan><tspan class="value">Philosophy, History, Art</tspan></text>
-<text x="595" y="506.0" font-size="17.5px"><tspan class="header">- Contact </tspan><tspan class="secondary">──────────────────────────────────────────</tspan></text>
+<text x="595" y="506.0" font-size="17.5px"><tspan class="header">- Contact </tspan><tspan class="rule">──────────────────────────────────────────</tspan></text>
 <a xlink:href="https://github.com/mohith-krishna-mahesh" target="_blank"><text x="595" y="529.5" font-size="17.5px"><tspan class="label">· GitHub: </tspan><tspan class="secondary">................ </tspan><tspan class="link">github.com/mohith-krishna-mahesh</tspan></text></a>
 <a xlink:href="https://www.linkedin.com/in/mohith-krishna-mahesh/" target="_blank"><text x="595" y="553.0" font-size="17.5px"><tspan class="label">· LinkedIn: </tspan><tspan class="secondary">.............. </tspan><tspan class="link">linkedin.com/in/mohith-krishna-mahesh</tspan></text></a>
 <a xlink:href="mailto:mohith4533@gmail.com" target="_blank"><text x="595" y="576.5" font-size="17.5px"><tspan class="label">· Email: </tspan><tspan class="secondary">................. </tspan><tspan class="link">mohith4533@gmail.com</tspan></text></a>
-<text x="595" y="608.0" font-size="17.5px"><tspan class="header">- GitHub Stats </tspan><tspan class="secondary">─────────────────────────────────────</tspan></text>
-<text x="595" y="631.5" font-size="17.5px"><tspan class="label">· Repos: </tspan><tspan class="secondary">................. </tspan><tspan class="value">9</tspan><tspan class="secondary"> {Contributed: </tspan><tspan class="value">0</tspan><tspan class="secondary">} | </tspan><tspan class="label">Stars: </tspan><tspan class="secondary">............. </tspan><tspan class="value">0</tspan></text>
-<text x="595" y="655.0" font-size="17.5px"><tspan class="label">· Commits: </tspan><tspan class="secondary">............... </tspan><tspan class="value">26</tspan><tspan class="secondary">              | </tspan><tspan class="label">Followers: </tspan><tspan class="secondary">......... </tspan><tspan class="value">5</tspan></text>
-<text x="595" y="678.5" font-size="17.5px"><tspan class="label">· Lines of Code on GitHub: </tspan><tspan class="secondary">.. </tspan><tspan class="value">38,190 </tspan><tspan class="secondary">(</tspan><tspan class="positive"> 43,765++</tspan><tspan class="secondary">, </tspan><tspan class="negative"> 5,575-- </tspan><tspan class="secondary">)</tspan></text>
+<text x="595" y="608.0" font-size="17.5px"><tspan class="header">- GitHub Stats </tspan><tspan class="rule">─────────────────────────────────────</tspan></text>
+<text x="595" y="631.5" font-size="17.5px"><tspan class="label">· Repos: </tspan><tspan class="secondary">................. </tspan><tspan class="number">9</tspan><tspan class="secondary"> {Contributed: </tspan><tspan class="number">0</tspan><tspan class="secondary">} | </tspan><tspan class="label">Stars: </tspan><tspan class="secondary">............. </tspan><tspan class="number">0</tspan></text>
+<text x="595" y="655.0" font-size="17.5px"><tspan class="label">· Commits: </tspan><tspan class="secondary">............... </tspan><tspan class="number">26</tspan><tspan class="secondary">              | </tspan><tspan class="label">Followers: </tspan><tspan class="secondary">......... </tspan><tspan class="number">5</tspan></text>
+<text x="595" y="678.5" font-size="17.5px"><tspan class="label">· Lines of Code on GitHub: </tspan><tspan class="secondary">.. </tspan><tspan class="number">38,190 </tspan><tspan class="secondary">(</tspan><tspan class="positive"> 43,765++</tspan><tspan class="secondary">, </tspan><tspan class="negative"> 5,575-- </tspan><tspan class="secondary">)</tspan></text>
 </svg>

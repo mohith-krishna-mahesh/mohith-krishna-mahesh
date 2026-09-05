@@ -67,7 +67,7 @@ CACHE_STATS = os.path.join(CACHE_DIR, "statistics.json")
 
 # ─── SVG Dimensions ──────────────────────────────────────────────────────────
 
-SVG_WIDTH = 1200
+SVG_WIDTH = 1260
 SVG_HEIGHT = 745
 SVG_CORNER_RADIUS = 15
 
@@ -87,12 +87,12 @@ ASCII_LINE_HEIGHT = 18.2
 ASCII_X = 22
 ASCII_Y = 28
 
-INFO_X = 525
+INFO_X = 515
 INFO_Y = 28
 
 # Info panel formatting
-LEADER_FILL = 23     # total width including label and leaders
-SEPARATOR_WIDTH = 48
+LEADER_FILL = 28     # total width including label and leaders (aligns all answers at col 29)
+SEPARATOR_WIDTH = 52
 
 # ─── Dark Mode Colors (VS Code Hacker Theme) ──────────────────────────────────
 

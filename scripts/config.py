@@ -67,63 +67,61 @@ CACHE_STATS = os.path.join(CACHE_DIR, "statistics.json")
 
 # ─── SVG Dimensions ──────────────────────────────────────────────────────────
 
-SVG_WIDTH = 2900
-SVG_HEIGHT = 1680
-SVG_CORNER_RADIUS = 18
+SVG_WIDTH = 1045
+SVG_HEIGHT = 703
+SVG_CORNER_RADIUS = 15
 
 # ─── Font ─────────────────────────────────────────────────────────────────────
 
 FONT_FAMILY = '"JetBrainsMono Nerd Font", "JetBrains Mono", "JetBrainsMono NF", monospace'
-INFO_FONT_SIZE = 25.0
-INFO_LINE_HEIGHT = 42.0
+INFO_FONT_SIZE = 15.0
+INFO_LINE_HEIGHT = 21.6
 
 # ─── ASCII Art Configuration ─────────────────────────────────────────────────
 
-ASCII_FONT_SIZE = 4.8
-ASCII_LINE_HEIGHT = 6.4
-ASCII_SLICE_TOP = 22       # slice top background lines
-ASCII_SLICE_BOTTOM = 51    # slice bottom background lines
+ASCII_FONT_SIZE = 15.0
+ASCII_LINE_HEIGHT = 21.6
 
 # ─── Layout ───────────────────────────────────────────────────────────────────
 
-ASCII_X = 30
-ASCII_Y = 40
+ASCII_X = 22
+ASCII_Y = 30
 
-INFO_X = 1220
-INFO_Y = 55
+INFO_X = 445
+INFO_Y = 30
 
 # Info panel formatting
-LEADER_FILL = 32     # total width including label and leaders
-SEPARATOR_WIDTH = 104
+LEADER_FILL = 26     # total width including label and leaders
+SEPARATOR_WIDTH = 54
 
-# ─── Dark Mode Colors (Hacker / Matrix Terminal Theme) ─────────────────────────
+# ─── Dark Mode Colors (VS Code Hacker Theme) ──────────────────────────────────
 
 DARK = {
-    "background": "#080C08",     # deep terminal black-green
-    "primary": "#E2E8F0",       # readable minty white
-    "secondary": "#234E35",     # subtle matrix green separators/leaders
-    "label": "#00FF66",         # vivid matrix neon green
-    "value": "#A7F3D0",         # phosphor mint / soft glow
-    "positive": "#00FF66",      # neon additions
-    "negative": "#FF3366",      # cyber crimson deletions
-    "header": "#00FF66",        # neon prompt
-    "ascii": "#00FF66",         # glowing phosphor ASCII portrait
-    "link": "#00E5FF",          # electric cyan links
+    "background": "#080C08",      # Deep terminal black
+    "primary": "#E2E8F0",        # Crisp white/light gray
+    "secondary": "#284E3A",      # Matrix green separators/leaders
+    "header": "#00FF66",         # Neon prompt
+    "label": "#00FF66",          # Neon green labels
+    "value": "#79C0FF",          # Electric ice blue values
+    "ascii": "#00FF66",          # Phosphor green portrait
+    "positive": "#00FF66",       # Additions
+    "negative": "#FF5555",       # Deletions
+    "link": "#00E5FF",           # Cyber cyan links
 }
 
 # ─── Light Mode Colors (Hacker Light Terminal Theme) ──────────────────────────
 
 LIGHT = {
-    "background": "#F0FDF4",     # soft terminal green-tinted light background
-    "primary": "#1F2937",       # readable dark charcoal
-    "secondary": "#6EE7B7",     # emerald separators/leaders
-    "label": "#047857",         # deep emerald hacker green
-    "value": "#065F46",         # dark forest value text
-    "positive": "#059669",      # additions
-    "negative": "#DC2626",      # deletions
-    "header": "#064E3B",        # terminal header
-    "ascii": "#00FF66",         # identical glowing phosphor ASCII portrait
-    "link": "#0D9488",          # cyber teal clickable links
+    "background": "#F0FDF4",     # Matrix light green tint
+    "primary": "#1F2937",        # Charcoal
+    "secondary": "#6EE7B7",      # Emerald leaders
+    "header": "#064E3B",         # Deep dark green prompt
+    "label": "#047857",          # Deep emerald labels
+    "value": "#0284C7",          # Deep cyan/blue values
+    "ascii": "#00FF66",          # Phosphor green portrait
+    "positive": "#059669",       # Additions
+    "negative": "#DC2626",       # Deletions
+    "link": "#0D9488",           # Cyber teal links
 }
 
 # ─── GitHub API ───────────────────────────────────────────────────────────────

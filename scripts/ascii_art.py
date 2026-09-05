@@ -10,18 +10,21 @@ import sys
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from scripts.config import SOURCE_DIR, ASCII_SLICE_TOP, ASCII_SLICE_BOTTOM
+from scripts.config import SOURCE_DIR
 
 
+COMPACT_ASCII_PATH = os.path.join(SOURCE_DIR, "compact_ascii.txt")
 USER_ASCII_PATH = os.path.join(SOURCE_DIR, "user_ascii.txt")
 
 
-def generate_ascii(path: str = USER_ASCII_PATH) -> list[str]:
+def generate_ascii(path: str = COMPACT_ASCII_PATH) -> list[str]:
     """
-    Load and return the exact ASCII art lines, preserving 100% full face width.
+    Load and return the compact 44x30 face ASCII art lines.
+    Falls back to user_ascii.txt if compact_ascii.txt is missing.
     """
-    if os.path.exists(path):
-        with open(path, "r", encoding="utf-8") as f:
+    target = path if os.path.exists(path) else USER_ASCII_PATH
+    if os.path.exists(target):
+        with open(target, "r", encoding="utf-8") as f:
             lines = [l.rstrip("\r\n") for l in f.readlines()]
         # Trim leading and trailing empty lines
         while lines and not lines[0].strip():
@@ -29,14 +32,15 @@ def generate_ascii(path: str = USER_ASCII_PATH) -> list[str]:
         while lines and not lines[-1].strip():
             lines.pop()
 
-        # Slice top and bottom background margins
-        total = len(lines)
-        start = ASCII_SLICE_TOP if total > ASCII_SLICE_TOP + ASCII_SLICE_BOTTOM else 0
-        end = total - ASCII_SLICE_BOTTOM if total > ASCII_SLICE_TOP + ASCII_SLICE_BOTTOM else total
-        sliced = lines[start:end]
+        if target == USER_ASCII_PATH:
+            # Slice top and bottom background margins for large user_ascii.txt
+            total = len(lines)
+            start = 22 if total > 73 else 0
+            end = total - 51 if total > 73 else total
+            lines = lines[start:end]
 
-        # Preserve full horizontal width, only stripping trailing spaces
-        return [l.rstrip() for l in sliced]
+        # Preserve character spacing, only stripping trailing spaces
+        return [l.rstrip() for l in lines]
     return []
 
 

@@ -14,7 +14,9 @@ from typing import Any
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-import requests
+import urllib.request
+import urllib.error
+import urllib.parse
 
 from scripts.config import (
     GITHUB_USERNAME, GITHUB_API_BASE, GITHUB_TOKEN,
@@ -25,7 +27,10 @@ from scripts.config import (
 
 def _headers() -> dict:
     """Build request headers, including auth token if available."""
-    h = {"Accept": "application/vnd.github.v3+json"}
+    h = {
+        "Accept": "application/vnd.github.v3+json",
+        "User-Agent": "GitHub-Readme-Stats",
+    }
     if GITHUB_TOKEN:
         h["Authorization"] = f"token {GITHUB_TOKEN}"
     return h
@@ -33,17 +38,25 @@ def _headers() -> dict:
 
 def _get(url: str, params: dict | None = None) -> Any:
     """GET with retry and rate-limit awareness."""
+    if params:
+        url = f"{url}?{urllib.parse.urlencode(params)}"
+    req = urllib.request.Request(url, headers=_headers())
     for attempt in range(3):
         try:
-            resp = requests.get(url, headers=_headers(), params=params, timeout=30)
-            if resp.status_code == 403 and "rate limit" in resp.text.lower():
-                wait = int(resp.headers.get("X-RateLimit-Reset", time.time() + 60)) - int(time.time())
+            with urllib.request.urlopen(req, timeout=30) as resp:
+                return json.loads(resp.read().decode("utf-8"))
+        except urllib.error.HTTPError as e:
+            if e.code == 403:
+                reset = e.headers.get("X-RateLimit-Reset")
+                wait = (int(reset) - int(time.time())) if reset else 60
                 print(f"  Rate limited, waiting {max(wait, 1)}s...")
                 time.sleep(max(wait, 1))
                 continue
-            resp.raise_for_status()
-            return resp.json()
-        except requests.RequestException as e:
+            if attempt == 2:
+                print(f"  Warning: API request failed: {e}")
+                return None
+            time.sleep(2 ** attempt)
+        except Exception as e:
             if attempt == 2:
                 print(f"  Warning: API request failed: {e}")
                 return None

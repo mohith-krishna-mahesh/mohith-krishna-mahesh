@@ -67,28 +67,28 @@ CACHE_STATS = os.path.join(CACHE_DIR, "statistics.json")
 
 # ─── SVG Dimensions ──────────────────────────────────────────────────────────
 
-SVG_WIDTH = 1095
-SVG_HEIGHT = 1050
+SVG_WIDTH = 1190
+SVG_HEIGHT = 675
 SVG_CORNER_RADIUS = 15
 
 # ─── Font ─────────────────────────────────────────────────────────────────────
 
 FONT_FAMILY = '"JetBrainsMono Nerd Font", "JetBrains Mono", "JetBrainsMono NF", monospace'
-INFO_FONT_SIZE = 15.0
-INFO_LINE_HEIGHT = 21.6
+INFO_FONT_SIZE = 16.5
+INFO_LINE_HEIGHT = 22.1
 
 # ─── ASCII Art Configuration ─────────────────────────────────────────────────
 
-ASCII_FONT_SIZE = 15.0
-ASCII_LINE_HEIGHT = 21.6
+ASCII_FONT_SIZE = 16.5
+ASCII_LINE_HEIGHT = 18.2
 
 # ─── Layout ───────────────────────────────────────────────────────────────────
 
 ASCII_X = 22
-ASCII_Y = 30
+ASCII_Y = 28
 
-INFO_X = 495
-INFO_Y = 30
+INFO_X = 540
+INFO_Y = 28
 
 # Info panel formatting
 LEADER_FILL = 26     # total width including label and leaders

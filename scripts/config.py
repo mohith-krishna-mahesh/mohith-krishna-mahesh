@@ -103,7 +103,7 @@ DARK = {
     "header": "#00FF66",         # Neon prompt
     "label": "#00FF66",          # Neon green labels
     "value": "#79C0FF",          # Electric ice blue values
-    "ascii": "#00FF66",          # Phosphor green portrait
+    "ascii": "#FFFFFF",          # Crisp white portrait (Dark mode)
     "positive": "#00FF66",       # Additions
     "negative": "#FF5555",       # Deletions
     "link": "#00E5FF",           # Cyber cyan links
@@ -118,7 +118,7 @@ LIGHT = {
     "header": "#064E3B",         # Deep dark green prompt
     "label": "#047857",          # Deep emerald labels
     "value": "#0284C7",          # Deep cyan/blue values
-    "ascii": "#00FF66",          # Phosphor green portrait
+    "ascii": "#000000",          # Crisp black portrait (Light mode)
     "positive": "#059669",       # Additions
     "negative": "#DC2626",       # Deletions
     "link": "#0D9488",           # Cyber teal links

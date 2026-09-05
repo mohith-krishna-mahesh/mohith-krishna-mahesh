@@ -7,7 +7,7 @@
   .primary { fill: #E2E8F0; }
   .secondary { fill: #284E3A; }
   .header { fill: #00FF66; font-weight: bold; }
-  .ascii { fill: #00FF66; }
+  .ascii { fill: #FFFFFF; }
   .positive { fill: #00FF66; font-weight: 600; }
   .negative { fill: #FF5555; font-weight: 600; }
   .link { fill: #00E5FF; font-weight: 500; }

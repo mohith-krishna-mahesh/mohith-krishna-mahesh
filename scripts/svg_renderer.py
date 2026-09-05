@@ -77,14 +77,6 @@ def render_svg(
     ascii_width = ascii_max_len * (ascii_font_size * 0.605)
     ascii_height = len(ascii_lines) * ascii_line_height
 
-    if mode == "light":
-        bg_dark = DARK["background"]
-        body.append(
-            f'<rect x="{ascii_x - 10}" y="{ascii_y - 18}" '
-            f'width="{ascii_width + 20:.1f}" height="{ascii_height + 25:.1f}" '
-            f'fill="{bg_dark}" rx="12"/>'
-        )
-
     body.append(f'<text x="{ascii_x}" y="{ascii_y}" class="ascii" font-size="{ascii_font_size}px">')
     for i, line in enumerate(ascii_lines):
         y = ascii_y + i * ascii_line_height

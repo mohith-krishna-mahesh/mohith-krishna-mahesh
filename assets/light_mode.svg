@@ -7,14 +7,13 @@
   .primary { fill: #1F2937; }
   .secondary { fill: #6EE7B7; }
   .header { fill: #064E3B; font-weight: bold; }
-  .ascii { fill: #00FF66; }
+  .ascii { fill: #000000; }
   .positive { fill: #059669; font-weight: 600; }
   .negative { fill: #DC2626; font-weight: 600; }
   .link { fill: #0D9488; font-weight: 500; }
   text, tspan { white-space: pre; }
   a { text-decoration: none; }
 </style>
-<rect x="12" y="12" width="473.7" height="759.4" fill="#080C08" rx="12"/>
 <text x="22" y="30" class="ascii" font-size="15.0px">
 <tspan x="22" y="30.0">               .... ::..     . ..</tspan>
 <tspan x="22" y="51.6">             ..:. ..          . :  ::...</tspan>

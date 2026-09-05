@@ -1,21 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1260 803" width="1260px" height="803px" font-family="ui-monospace, 'SF Mono', SFMono-Regular, Menlo, Consolas, 'Liberation Mono', 'JetBrains Mono', monospace">
-<rect width="1260px" height="803px" fill="#F5F5F4" rx="15"/>
+<rect width="1260px" height="803px" fill="#F6F8FA" rx="15"/>
+<rect x="12" y="12" width="485" height="779" fill="#0A0B0A" rx="10"/>
 <style>
-  .label { fill: #2D6A4F; }
-  .value { fill: #18181B; }
+  .label { fill: #1B5E20; }
+  .value { fill: #1F2328; }
   .number { fill: #B45309; }
-  .primary { fill: #393836; }
-  .secondary { fill: #A8A29E; }
-  .rule { fill: #2D6A4F; font-weight: bold; }
-  .header { fill: #2D6A4F; font-weight: bold; }
-  .prompt-user { fill: #2563EB; font-weight: bold; }
+  .primary { fill: #1F2328; }
+  .secondary { fill: #656D76; }
+  .rule { fill: #1B5E20; font-weight: bold; }
+  .header { fill: #1B5E20; font-weight: bold; }
+  .prompt-user { fill: #0969DA; font-weight: bold; }
   .prompt-at { fill: #B45309; font-weight: bold; }
-  .prompt-host { fill: #2D6A4F; font-weight: bold; }
-  .ascii { fill: #000000; }
-  .positive { fill: #2D6A4F; }
-  .negative { fill: #DC2626; }
-  .link { fill: #2563EB; }
+  .prompt-host { fill: #1B5E20; font-weight: bold; }
+  .ascii { fill: #FFFFFF; }
+  .positive { fill: #1A7F37; }
+  .negative { fill: #CF222E; }
+  .link { fill: #0969DA; }
   text, tspan { white-space: pre; }
   a { text-decoration: none; }
 </style>

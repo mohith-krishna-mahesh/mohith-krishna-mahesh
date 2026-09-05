@@ -124,8 +124,8 @@ def render_svg(
         (None, None, []),  # spacer
         ("Interests.Software", "Cybersecurity, Systems, Full-Stack,", ["AI/ML, Blockchain, Game Development"]),
         ("Interests.Hardware", "Communication Systems, Rover Dev", []),
-        ("Interests.Events", "CTFs, Hackathons, Game Jams, Robotics", []),
-        ("Interests.Science", "Mathematics, Physics, Chemistry, Biology", []),
+        ("Interests.Events", "CTFs, Hackathons, Game Jams,", ["Robotics Competitions"]),
+        ("Interests.Science", "Mathematics, Physics, Chemistry,", ["Biology"]),
         ("Interests.Humanities", "Philosophy, History, Art", []),
     ]
 
@@ -221,7 +221,7 @@ def render_svg(
     repo_prefix = "· Repos: "
     repo_dots = "." * max(2, leader_fill - len(repo_prefix)) + " "
     star_prefix = "Stars: "
-    star_dots = "." * 13 + " "
+    star_dots = ".... "
     body.append(
         f'<text x="{info_x}" y="{curr_y:.1f}" font-size="{font_size}px">'
         f'<tspan class="label">{_esc(repo_prefix)}</tspan>'
@@ -241,16 +241,15 @@ def render_svg(
     commit_prefix = "· Commits: "
     commit_dots = "." * max(2, leader_fill - len(commit_prefix)) + " "
     commits_str = str(commits)
-    padding_needed = max(1, 16 - len(commits_str))
-    commits_pad = " " * padding_needed
+    commits_pad = " " * 17
     follower_prefix = "Followers: "
-    follower_dots = "." * 9 + " "
+    follower_dots = ".... "
     body.append(
         f'<text x="{info_x}" y="{curr_y:.1f}" font-size="{font_size}px">'
         f'<tspan class="label">{_esc(commit_prefix)}</tspan>'
         f'<tspan class="secondary">{_esc(commit_dots)}</tspan>'
         f'<tspan class="number">{_esc(commits_str)}</tspan>'
-        f'<tspan class="secondary">{_esc(commits_pad)}| </tspan>'
+        f'<tspan class="secondary">{commits_pad}| </tspan>'
         f'<tspan class="label">{_esc(follower_prefix)}</tspan>'
         f'<tspan class="secondary">{_esc(follower_dots)}</tspan>'
         f'<tspan class="number">{_esc(followers)}</tspan>'
@@ -275,7 +274,7 @@ def render_svg(
     )
     curr_y += line_height
 
-    final_height = int(max(curr_y + 15, ascii_y + len(ascii_lines) * ascii_line_height + 25))
+    final_height = int(max(curr_y + 35, ascii_y + len(ascii_lines) * ascii_line_height + 40))
 
     # Assemble complete SVG document
     svg = [

@@ -106,7 +106,7 @@ def main():
         print(f"  Profile: {profile.get('login')} | Repos: {len(repos)}")
 
         print("\n[4/6] Calculating statistics...")
-        stats = calculate_statistics(profile, repos)
+        stats = calculate_statistics(profile, repos, use_cache=False)
         print(f"  Commits: {stats.get('commits', 0)}")
         print(f"  Stars: {stats.get('stars', 0)}")
         print(f"  LOC: +{stats.get('additions', 0)} / -{stats.get('deletions', 0)}")

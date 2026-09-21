@@ -198,24 +198,17 @@ def calculate_statistics(profile: dict, repos: list[dict], use_cache: bool = Tru
             name = repo["name"]
             print(f"  Fetching LOC for {name}...")
             try:
-                resp = requests.get(
-                    f"{GITHUB_API_BASE}/repos/{GITHUB_USERNAME}/{name}/stats/contributors",
-                    headers=_headers(),
-                    timeout=10,  # short timeout — this endpoint is notoriously slow
-                )
-                if resp.status_code == 200:
-                    stats = resp.json()
-                    if isinstance(stats, list):
-                        for contributor in stats:
-                            if isinstance(contributor, dict):
-                                author = contributor.get("author", {})
-                                if isinstance(author, dict) and author.get("login", "").lower() == GITHUB_USERNAME.lower():
-                                    for week in contributor.get("weeks", []):
-                                        total_additions += week.get("a", 0)
-                                        total_deletions += week.get("d", 0)
-                elif resp.status_code == 202:
-                    print(f"    Stats computing for {name}, skipping...")
-                    continue
+                stats = _get(f"{GITHUB_API_BASE}/repos/{GITHUB_USERNAME}/{name}/stats/contributors")
+                if isinstance(stats, list):
+                    for contributor in stats:
+                        if isinstance(contributor, dict):
+                            author = contributor.get("author", {})
+                            if isinstance(author, dict) and author.get("login", "").lower() == GITHUB_USERNAME.lower():
+                                for week in contributor.get("weeks", []):
+                                    total_additions += week.get("a", 0)
+                                    total_deletions += week.get("d", 0)
+                elif stats is None:
+                    print(f"    Stats request returned no data for {name}, skipping...")
             except Exception as e:
                 print(f"    Warning: {e}")
                 continue

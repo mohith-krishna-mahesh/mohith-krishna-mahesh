@@ -45,11 +45,6 @@ def generate_ascii(path: str = COMPACT_ASCII_PATH) -> list[str]:
     return []
 
 
-def ascii_to_string(lines: list[str]) -> str:
-    """Join ASCII lines into a single string for display."""
-    return "\n".join(lines)
-
-
 if __name__ == "__main__":
     lines = generate_ascii()
     print(f"Loaded full-face ASCII: {len(lines)} lines, max width {max(len(l) for l in lines)} chars")

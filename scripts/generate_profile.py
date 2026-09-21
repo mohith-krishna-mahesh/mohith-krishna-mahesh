@@ -3,7 +3,7 @@
 Main orchestrator for the GitHub profile README generator.
 
 Runs the full pipeline:
-1. Generate ASCII portrait from source photo
+1. Load ASCII portrait from bundled art source
 2. Fetch GitHub data (profile, repos, stats)
 3. Select best projects
 4. Calculate dynamic uptime
@@ -24,10 +24,10 @@ import xml.etree.ElementTree as ET
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from scripts.config import (
-    DARK_SVG, LIGHT_SVG, SOURCE_PHOTO,
+    DARK_SVG, LIGHT_SVG,
     CACHE_PROFILE, CACHE_REPOS, CACHE_STATS,
 )
-from scripts.ascii_art import generate_ascii, ascii_to_string
+from scripts.ascii_art import generate_ascii
 from scripts.github_stats import (
     fetch_profile, fetch_repositories, calculate_statistics,
     select_projects, calculate_uptime,
@@ -67,11 +67,11 @@ def main():
 
     # Step 1: ASCII Portrait
     print("\n[1/6] Generating ASCII portrait...")
-    if not os.path.exists(SOURCE_PHOTO):
-        print(f"  ERROR: Source photo not found: {SOURCE_PHOTO}")
+    ascii_lines = generate_ascii()
+    if not ascii_lines:
+        print("  ERROR: No bundled ASCII art source was found for the profile.")
         sys.exit(1)
 
-    ascii_lines = generate_ascii()
     print(f"  Generated: {len(ascii_lines)} lines, max width {max(len(l) for l in ascii_lines)} chars")
     print("\n  Preview:")
     for line in ascii_lines[:10]:

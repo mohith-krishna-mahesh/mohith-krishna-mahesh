@@ -35,7 +35,7 @@ PROFILE_FIELDS = [
     ("Kernel", "B.Tech Computer Science"),
     ("IDE", "Zed, VSCode"),
     None,  # blank line separator
-    ("Languages.Programming", "Python, C, C++, Java, JavaScript, TypeScript, Bash"),
+    ("Languages.Programming", "Python, C, C++, Go, Java, JavaScript, TypeScript, Bash, Assembly"),
     ("Languages.Computer", "HTML, CSS, SQL, JSON, YAML, LaTeX"),
     ("Languages.Real", "Malayalam, English, Tamil, Hindi"),
     None,
@@ -57,7 +57,6 @@ SOURCE_DIR = os.path.join(ASSETS_DIR, "source")
 CACHE_DIR = os.path.join(ROOT_DIR, "cache")
 SCRIPTS_DIR = os.path.join(ROOT_DIR, "scripts")
 
-SOURCE_PHOTO = os.path.join(SOURCE_DIR, "photo.jpg")
 DARK_SVG = os.path.join(ASSETS_DIR, "dark_mode.svg")
 LIGHT_SVG = os.path.join(ASSETS_DIR, "light_mode.svg")
 
